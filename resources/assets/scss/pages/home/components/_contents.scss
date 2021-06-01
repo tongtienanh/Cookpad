@@ -1,0 +1,233 @@
+#section_contents {
+    position: relative;
+    z-index: 1;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+    .wrap_more {
+        position: relative;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    .info_more {
+        box-sizing: border-box;
+        height: auto;
+        .list_more{
+            border: 1px solid $border-e5;
+            padding: 0 15px;
+        }
+        li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px dashed $border-e5;
+            position: relative;
+            &.b-bottom{
+                border-bottom: none;
+            }
+            .item-save{
+                position: absolute;
+                bottom: 10px;
+                right: 0;
+            }
+        }
+    }
+    .item-spotlight-group {
+        position: relative;
+        height: 331px;
+        .small-img {
+            position: absolute;
+            top: 2%;
+            left: 7%;
+            border: 1px solid $border-e5;
+            background: $white;
+            padding: 2px;
+            border-radius: 3px;
+            margin-right: 10px;
+            box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+            width: 110px;
+            height: 80px;
+        }
+        .avatar {
+            width: 100%;
+            height: 100%;
+        }
+        .banner{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .title-spotlight{
+            a{
+                font-weight: 500;
+            }
+        }
+        .name-spotlight{
+            padding-left: 0;
+            color: $color-333;
+        }
+        .company-job{
+            position: absolute;
+            bottom: 0;
+            img{
+                width: 10px;
+                display: inline-block;
+                margin-left: 2px;
+            }
+        }
+        .company-star{
+            position: absolute;
+            bottom: 6px;
+            right: 29px;
+            img{
+                width: 16px;
+            }
+        }
+        .company-ad{
+            display: inline-flex;
+            img{
+                margin-right: 4px;
+                width: 12px;
+            }
+        }
+    }
+
+}
+
+.m-right{
+    margin-right: 0;
+}
+
+@media  (max-width: 1200px) {
+    #section_contents{
+        width: 100%;
+    }
+    .list_more{
+        width: 99%;
+    }
+}
+
+@media (max-width: 992px) {
+    #section_contents{
+        .company-hot{
+            border: 1px solid $border-e5;
+            margin-bottom: 60px;
+        }
+        .wrap_more, .info_more{
+           width: 100%;
+        }
+        .item-spotlight-group {
+            height: 334px;
+            .name-spotlight{
+                .mb-hide{
+                    display: none;
+                }
+            }
+            .mb-4 {
+                margin-bottom: 0 !important;
+            }
+            .title-spotlight{
+                margin-bottom: 2px !important;
+                a{
+                    display: block;
+                    color: $dark;
+                    margin: 2px 15px 0 30px;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+            }
+            p{
+                a{
+                    display: block;
+                    color: $dark;
+                    margin: 0 15px 10px 30px;
+                    &:hover{
+                        color: $success;
+                    }
+                }
+            }
+            .img-company{
+                height: 265px;
+                a{
+                    display: block;
+                    height: 100%;
+                }
+            }
+            .small-img{
+                bottom: 15px;
+                top: inherit;
+            }
+            .company-job{
+                position: inherit;
+                color: $success;
+            }
+            .company-star{
+                right: 15px;
+            }
+        }
+    }
+    .list_more{
+        width: 100%;
+    }
+    .section-head-title{
+        text-align: center;
+    }
+}
+
+@media  (max-width: 768px) {
+    .section{
+        .view-more {
+            right: 0;
+            top: 45px;
+            font-size: 12px;
+        }
+        .info_more{
+            li{
+                position: relative;
+            }
+        }
+        .job-hot{
+            .item__favorite{
+                top: .4rem;
+                right: -.4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .section-head-title{
+        font-size: 22px;
+    }
+    #section_contents {
+        margin-top: 0;
+        .h-mobile-360{
+            max-height: 360px;
+        }
+        .h-mobile-390{
+            max-height: 390px;
+        }
+        .company-hot {
+            margin-bottom: 50px;
+        }
+        .item-spotlight-group {
+            height: 268px;
+
+            .img-company {
+                height: 200px;
+            }
+        }
+        .info_more {
+            margin-bottom: 15px;
+        }
+    }
+    .section{
+        .view-more {
+            top: 41px;
+        }
+    }
+}
+

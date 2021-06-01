@@ -1,0 +1,16 @@
+.breadcrumb {
+    &>li {
+        display: inline-block;
+        font-size: 0.9rem;
+        &+ li:before {
+            padding: 0 5px;
+            color: #212f3f;
+            content: "/";
+            font-weight: 700;
+        }
+
+    }
+    a.active {
+        color: #333;
+    }
+}

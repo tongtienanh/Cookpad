@@ -1,0 +1,313 @@
+.recommendation-job {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h4 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .box {
+        padding: 10px;
+        transition: background-color .3s;
+        margin-bottom: 15px;
+        background: $white !important;
+        box-shadow: inherit;
+        border: 1px solid #e5e5e5b8;
+        position: relative;
+        &:hover {
+            background: #0caa410a !important;
+        }
+        .logo-box {
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80%;
+            min-width: 86%;
+            img {
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+                width: 80px;
+                object-fit: contain;
+                height: 80px;
+                border-radius: 4px;
+            }
+        }
+        .item {
+            &__favorite {
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                z-index: 1;
+                i {
+                    color: $color-555;
+                    display: block;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+            &__hot-top {
+                display: none;
+                position: absolute;
+                top: 15px;
+                right: 5px;
+                color: $white;
+                background: $oranges;
+                font-size: 13px;
+                padding: 2px 4px;
+                border-radius: 4px;
+            }
+        }
+    }
+    .text-clip {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    .title {
+        font-weight: 500;
+        font-size: 1.15rem;
+        display: block;
+        margin-bottom: 0;
+        margin-top: 5px;
+        color: $color-333;
+        transition: color .3s;
+    }
+
+    .company {
+        font-weight: normal;
+        font-size: 14px;
+        color: $color-333;
+        margin-top: 3px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    .address {
+        color:  $color-333;
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .money {
+        color: $oranges;
+        margin-bottom: 0;
+    }
+
+    .job {
+        .col-sm-4,
+        .col-sm-8{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .col-sm-4 {
+            padding-left: 10px;
+            flex: 0 0 30.333333%;
+            max-width: 30.333333%;
+        }
+        .col-sm-8 {
+            flex: 0 0 69.666667%;
+            max-width: 69.666667%;
+            align-self: center;
+            padding-left: 0;
+            padding-right: 40px;
+        }
+    }
+    .row_loving-jobs {
+        > .col-md-4 {
+            &.plr {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    .visible-sm {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and  (max-width: 992px){
+    .recommendation-job {
+        .row_loving-jobs {
+            .row {
+                padding: 0 10px;
+            }
+        }
+        .job {
+            .col-sm-8 {
+                padding-left: 5px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .recommendation-job {
+        h4 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .recommendation-job {
+        h4 {
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .recommendation-job {
+        .row_loving-jobs {
+            > .col-md-4 {
+                flex: 0 0 100%;
+                max-width: 100%;
+                &.plr {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+        }
+        .visible-sm {
+            display: block;
+        }
+        .box {
+            padding: 8px 5px 10px 0;
+            transition: background-color 0.3s;
+            border: 0;
+            border-bottom: 1px solid $border-e5;
+            box-shadow: inherit;
+            margin-bottom: 0;
+            border-radius: inherit;
+            &.bt{
+                border-top: 1px solid $border-e5;
+            }
+
+            &:hover {
+                background: inherit !important;
+            }
+            .logo-box {
+                height: 50px;
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+                min-height: inherit;
+                min-width: inherit;
+            }
+            .item {
+                &__hot-top {
+                    display: block;
+                }
+                &__favorite {
+                    right: 5px;
+                }
+            }
+        }
+        a {
+            &.view-more {
+                text-transform: uppercase;
+                font-weight: 400;
+                margin: 6px 0;
+                font-size: 14px;
+                color: $success;
+                display: block;
+                cursor: pointer;
+                text-align: center;
+            }
+        }
+        .job {
+            .col-sm-4 {
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .recommendation-job {
+        .box {
+            .logo-box {
+                margin-right: 10px;
+                margin-left: 5px;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .recommendation-job {
+        .job {
+            .col-sm-4 {
+                flex: 0 0 26%;
+                max-width: 26%;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 440px) {
+    .recommendation-job {
+        .box {
+            .logo-box {
+                img {
+                    width: 70px;
+                    height: 70px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .recommendation-job {
+        .box {
+            .logo-box {
+                img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 17px;
+                }
+
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .recommendation-job {
+        .box {
+            .logo-box {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+// Paginate
+.paginate {
+    padding: 1.8rem 1rem;
+    border-bottom: $border-search-inc;
+    text-align: center;
+    .btn-more-job {
+        font-size: 1.125rem;
+        color: $white;
+        font-weight: 400;
+        background: $success-dark;
+        display: block;
+        padding: .875rem;
+    }
+
+    &__list {
+        display: none;
+    }
+}
+
+//Style for desktop
+@media (min-width: 992px) {
+    // Paginate
+    .paginate {
+        .btn-more-job {
+            display: none;
+        }
+
+        &__list {
+            display: block;
+
+            a {
+                display: inline-block;
+                padding: 6px 10px;
+                font-weight: 400;
+                color: $success;
+                border: 1px solid $success;
+                margin: 2px;
+                border-radius: 5px;
+            }
+
+            li {
+                display: inline;
+
+                &.active {
+                    a {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}

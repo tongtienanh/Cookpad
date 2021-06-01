@@ -1,0 +1,107 @@
+.tbnow-main-nav{
+.list-category{
+    border: 1px solid #d7d7d7;
+    border-top: 4px solid #f37934;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .item-category{
+        font-size: 16px;
+        cursor: pointer;
+        flex: 0 0 33.33333%;
+        max-width: none;
+        position: relative;
+        border-right: 1px solid #d7d7d7;
+        &:hover .list-category-sub {
+            display: block;
+        }
+        .type-category{
+            color: #525252;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            height: 116px;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%);
+                width: 0;
+                height: 0;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-top: 12px solid #f37934;
+            }
+            .icon-tb-restaurant{
+                background-position: -779px -169px;
+                width: 80px;
+                height: 80px;
+
+            }
+            .icon-tb-dessert{
+                background-position: -779px -79px;
+                width: 80px;
+                height: 80px;
+            }
+            .icon-tb-entertainment{
+                background-position: -696px -221px;
+                width: 80px;
+                height: 80px;
+            }
+            .icon {
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+                background-image: url(https://www.now.vn/app/assets/img/bg-icon.png?2404d5c158d1d09104c34443b2fd5f44);
+            }
+            .text{
+                font-weight: 700;
+                font-size: 24px;
+                color: #525252;
+                padding-left: 8px;
+            }
+            .focus{
+                color: #f37934;
+            }
+        }
+        .list-category-sub{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -1px;
+            right: -1px;
+            z-index: 10;
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            .item-sub{
+                font-size: 14px;
+                color: #525252;
+                display: block;
+                padding: 14px 30px;
+                transition: all .2s;
+                text-transform: uppercase;
+                &:hover{
+                    color: #fff;
+                    text-decoration: none;
+                    background-color: #f37934;
+                }
+                a{
+                    text-decoration: none;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+}
+@media(max-width: 678px)  {
+    .tbnow-main-nav{
+        display: none;
+    }
+}

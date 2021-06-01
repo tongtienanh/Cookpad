@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+@import "../../bootstrap/bootstrap";
+
+@import "../../components/header_search";
+@import '../../components/header/header_detail_job';
+@import "../../components/sub_header";
+@import "../../components/modal/modal_custom";
+@import "../../components/modal/modal_custom_login";
+@import "../../components/course/course";
+@import "../../components/custom_owl";
+@import "../search_job/components/_aside_left";
+@import "../../components/scroll_custom";
+@import "../../components/form_search_detail";
+@import "../../components/detail_job/filter_by_keyword";
+@import "../../components/detail_job/share_social";
+@import "../../components/detail_job/btn_as_mobile";
+@import "../../components/detail_job/box_suggest_work";
+@import "../../components/tab_job_company";
+@import "../../components/breadcrumb";
+
+//Component local
+@import "components/static";
+@import "components/box_job_company";
+@import "components/tab_company";
+@import "components/content_job";
+@import "components/box_apply_job";
+@import "components/tab_company_info";
+

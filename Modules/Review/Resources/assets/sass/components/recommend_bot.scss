@@ -1,0 +1,31 @@
+.place-related{
+    background: #f7f7f7;
+    clear: both;
+    padding: 16px 15px 0 15px;
+}
+.recommend-box h2{
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: .25rem;
+    margin-bottom: .5rem;
+    margin-top: .25rem;
+    margin-left: 15px;
+}
+.recommend-box{
+    margin: 0 auto;
+    width: 1200px;
+    .list-items{
+        display: flex;
+    }
+}
+@media(max-width: 768px)  {
+    .recommend-box{
+        width: 100%;
+    }
+
+}
+@media(min-width: 1024px)  {
+    .recommend-box{
+        width: 100%;
+    }
+}

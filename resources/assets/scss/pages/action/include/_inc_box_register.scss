@@ -1,0 +1,31 @@
+.box-register{
+  background-color: #3B5998;
+  text-align: center;
+  .content{
+    color: $white;
+    h1{
+      font-size: 36px;
+    }
+    p{
+      font-size: 16px;
+      margin: 5px 0 20px 0;
+    }
+    .btn-register{
+      width: 200px;
+      font-weight: 500;
+      background-color: #FFB800;
+      color: $white;
+      border: 1px solid #FFB800;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .box-register{
+    .content{
+      h1{
+        font-size: 30px;
+      }
+    }
+  }
+}

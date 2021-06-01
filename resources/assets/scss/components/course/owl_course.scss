@@ -1,0 +1,27 @@
+.owl-prev{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    color: transparent;
+    cursor: pointer;
+    background: #FFFFFF!important;
+    width: 30px;
+    height: 50px;
+    //transform: translateY(-50%);
+    border: 0;
+    z-index: 1;
+}
+.owl-next{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    color: transparent;
+    cursor: pointer;
+    background: #FFFFFF!important;
+    width: 30px;
+    height: 50px;
+    //transform: translateY(-50%);
+    border: 0;
+    z-index: 1;
+}
+

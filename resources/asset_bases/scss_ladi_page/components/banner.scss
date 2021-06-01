@@ -1,0 +1,36 @@
+.banner-landing {
+  background: #27326c;
+  color: $white;
+  margin-bottom: 30px;
+  padding: 140px 0;
+  &-flex {
+    display: flex;
+  }
+  &__content {
+    flex: 0 0 60%;
+    p{
+      line-height: 26px;
+    }
+  }
+  &__image {
+    margin-left: 40px;
+    flex: 0 0 40%;
+    img {
+      height: 300px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-landing {
+    padding: 70px 0;
+    &__content {
+      flex: 0 0 100%;
+      text-align: center;
+    }
+    &__image {
+      display: none;
+    }
+  }
+}

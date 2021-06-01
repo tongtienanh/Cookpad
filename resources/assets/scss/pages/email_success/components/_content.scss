@@ -1,0 +1,238 @@
+*{
+    font-family: Roboto, sans-serif;
+}
+body, html{
+    background: #ebebeb;
+}
+//menu
+.menu{
+    position: fixed;
+    width: 288px;
+    height: 100%;
+    overflow: auto;
+    background: $white;
+    padding: 0;
+    li{
+        list-style: none;
+        border-bottom: 1px solid $border-e5;
+        a{
+            text-decoration: none;
+            line-height: 24px;
+            padding: 10px 20px;
+            display: block;
+            color: $color-333;
+            font-size: 14px;
+            transition: .2s;
+            &:hover, &.active{
+                color: $white;
+                background: $success;
+            }
+        }
+    }
+
+}
+
+//content
+table{
+    width: 100%;
+    &.email{
+        width: 600px;
+        border-collapse: collapse;
+        background: $white;
+        border-radius: 10px;
+        margin: auto;
+    }
+    &#email-footer{
+        padding: 0 90px;
+    }
+
+    .header-email{
+        background: $success;
+        color: $white;
+        >td{
+            padding: 8px 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+    .title-logo{
+        font-size: 24px;
+        color: $white;
+    }
+    .des-header{
+        text-align: right;
+        font-size: 20px;
+    }
+
+    .content-email{
+        >td{
+            padding: 20px 20px 10px 20px;
+        }
+    }
+    span, strong{
+        font-size: 14px;
+        display: inline-block;
+        padding: 5px 0;
+        color: $color-333;
+    }
+    strong{
+        font-weight: 500;
+        &.text-center{
+            padding: 15px 0 5px 0;
+        }
+    }
+    .f16{
+        font-size: 16px;
+    }
+    .f12{
+        font-size: 12px;
+        padding: 0;
+    }
+    .text-center{
+        text-align: center;
+        width: 100%;
+        &.bg-color{
+            padding: 5px 0 15px 0;
+            a{
+                background: #DEF6FD;
+                padding: 10px;
+                display: inline-block;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .text-left{
+        text-align: left;
+    }
+    .text-right{
+        text-align: right;
+    }
+
+    a{
+        text-decoration: none;
+        color: $success;
+    }
+    .contact{
+        padding: 20px 0 5px 0;
+    }
+    .footer-email{
+        >td{
+            padding: 0 20px 20px 20px;
+        }
+    }
+    .bg-gray{
+        padding: 12px 60px;
+        background: #eeeeee;
+        color: #999999;
+    }
+    .icon-facebook{
+        text-align: right;
+        img{
+            width: 32px;
+        }
+    }
+    .w5{
+        width: 5px;
+    }
+    .w10{
+        display: block;
+        width: 10px;
+    }
+    .h0{
+        height: 15px;
+    }
+    .p0{
+        padding: 0;
+    }
+    .pt20{
+        padding-top: 20px;
+    }
+    .pt15{
+        padding-top: 15px;
+    }
+    .pt10{
+        padding-top: 10px;
+    }
+    .pb15{
+        padding-bottom: 15px;
+    }
+    .fw300{
+        font-weight: 300;
+    }
+    .lh20{
+        line-height: 24px;
+    }
+    .icon-youtube{
+        float: left;
+        img{
+            width: 32px;
+            border-radius: 50%;
+        }
+    }
+    .link{
+        width: 50%;
+    }
+
+    .b-top{
+        border-top: 2px solid $border-e5
+    }
+
+}
+
+//info_work
+#info-work {
+    padding: 10px 15px;
+    border: 1px solid $border-e5;
+}
+//email_support_work
+#list-work{
+    //.logo_company{
+    //    width: 15%;
+    //    img{
+    //        width: 100%;
+    //    }
+    //}
+    .content-work{
+        width: 80%;
+        padding: 0 20px 3px 0;
+        .bg-hot{
+            padding: 3px 5px;
+            background: #FFAA00;
+            color: #fff;
+            font-weight: 500;
+            border-radius: 4px;
+        }
+        .title-work{
+            font-size: 18px;
+            color: #DC3545;
+            font-weight: 500;
+        }
+        .company{
+            font-size: 15px;
+            color: $success;
+            display: block;
+        }
+        .address, .salary{
+            font-size: 14px;
+            display: block;
+        }
+        .salary{
+            padding-bottom: 10px;
+        }
+        .tag{
+            padding: 5px 10px;
+            border: 1px solid $border-e5;
+            border-radius: 2px;
+            margin-right: 4px;
+        }
+    }
+    .row-work{
+        display: block;
+        border-bottom: 2px solid $border-e5;
+    }
+    .apply{
+        width: 20%;
+    }
+}

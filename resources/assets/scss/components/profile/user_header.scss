@@ -1,0 +1,59 @@
+.user-header{
+    margin-bottom: 16px;
+    margin-top: -3rem;
+
+    .media{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .icon{
+            position: absolute;
+            right: 0;
+            top: 60px;
+            a{
+                margin:0 4px;
+                i{
+                    font-size: 20px;
+                    color: #767676;
+                }
+            }
+
+        }
+        //margin-top: 12%;
+        img{
+            width: 120px;
+            height: 120px;
+            margin-bottom: 8px;
+            border-radius: 50%;
+            //position: absolute;
+            //right: 47%;
+            //top: 131px;
+        }
+        p{
+            padding-top: .25rem;
+            color: #4a4a4a ;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .country{
+            padding: 8px;
+            a{
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+        input{
+            padding-top: 1px;
+            padding-bottom: 1px;
+            border: 1px solid #cececd;;
+            outline: none;
+            font-size: .875rem;
+            color: rgb(118, 118, 118);
+            margin-top: 8px;
+
+        }
+    }
+}

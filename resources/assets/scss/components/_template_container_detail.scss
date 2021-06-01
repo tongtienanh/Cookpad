@@ -1,0 +1,108 @@
+.header-box {
+    h1 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    ul {
+        border: 2px dashed #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+
+        li {
+            list-style: none;
+            font-size: 16px;
+            color: #666;
+            line-height: 30px;
+        }
+    }
+}
+
+.content {
+    background-color: $white;
+
+    p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+.company {
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    img {
+        height: 32px;
+        margin-right: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.discuss {
+    h2 {
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+        font-size: 13px;
+        font-style: italic;
+        color: #6c6868;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+.img-responsive {
+    max-width: 100%;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+}
+
+.prev-template-cv {
+    i {
+        color: $white;
+        margin-right: 8px;
+    }
+}
+
+.nav-temp {
+    margin-bottom: 8px;
+    a {
+        font-weight: 500;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+    i {
+        color: $white;
+        vertical-align: middle;
+        font-weight: 600;
+    }
+}
+
+.btn-chosen-template {
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .detail-cv {
+        flex-direction: column;
+
+        .col-5, .col-7 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .col-7 {
+            margin-top: 15px;
+        }
+
+        .col-5 {
+            order: 2;
+        }
+    }
+}

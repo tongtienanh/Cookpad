@@ -1,0 +1,38 @@
+.author-profile{
+.container{
+    border-top: 1px solid $color-cecece ;
+    border-bottom: 1px solid $color-cecece ;
+    --border-opacity: 1;
+    padding: 16px;
+    .recipe-media{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 60px;
+            height: 60px;
+            margin-bottom: 8px;
+            border-radius: 50%;
+        }
+        p{
+            padding-top: .25rem;
+            padding-bottom: .25rem;
+            color: #4a4a4a ;
+            font-size: 20px;
+        }
+        strong{
+
+        }
+        input{
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+        .btn-active{
+            background: #ECEBE9;
+            outline: none;
+            border: none;
+        }
+    }
+}
+}

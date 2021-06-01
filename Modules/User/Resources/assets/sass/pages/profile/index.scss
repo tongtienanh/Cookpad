@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/container";
+@import "../../../../../../../resources/assets/scss/components/fillter_category";
+@import "../../../../../../../resources/assets/scss/components/profile/user_header";
+@import "../../../../../../../resources/assets/scss/components/profile/user_background";
+@import "../../../../../../../resources/assets/scss/components/job/listing_item_job";
+@import "components/recipe_list";
+@import "components/text_center";
+.see-more{
+    border-bottom: 2px solid #f93;
+    //font-weight: 600;
+    .tracking-wider {
+        font-weight: 600;
+    }
+}

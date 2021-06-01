@@ -1,0 +1,36 @@
+.main-content {
+    h1 {
+        margin: 20px 0 10px;
+        font-size: 34px;
+        color: $color-4a4a4a;
+    }
+    h2{
+        margin: 30px 0 15px;
+        font-size: 20px;
+        color: $color-4a4a4a;
+    }
+
+    h3 {
+        margin: 20px 0 10px;
+        font-size: 18px;
+        color: $color-4a4a4a;
+    }
+    color: $color-4a4a4a;
+    .legal {
+        p {
+            font-size: 16px;
+            color: $color-4a4a4a;
+        }
+
+        ul {
+            li {
+                margin-bottom: 10px;
+                a {
+                    font-size: 16px;
+                    text-decoration: underline;
+                    color: $color-4a4a4a;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.b-lazy {
+    -webkit-transition: opacity 500ms ease-in-out;
+    -moz-transition: opacity 500ms ease-in-out;
+    -o-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
+    max-width: 100%;
+    opacity: 0.2;
+    -webkit-filter: blur(5px); -moz-filter: blur(5px);
+    -o-filter: blur(5px); -ms-filter: blur(5px);
+    -webkit-transition: .5s -webkit-filter linear;
+    -moz-transition: .5s -moz-filter linear;
+    -o-transition: .5s -o-filter linear;
+    transition: .5s filter linear;
+}
+.b-lazy.b-loaded {
+    opacity: 1;
+    filter: url(#blur); filter: blur(0);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+}

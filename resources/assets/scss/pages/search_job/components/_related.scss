@@ -1,0 +1,59 @@
+
+// Suggest keyword
+.related {
+    margin: 9px 0;
+
+    &__title {
+        padding: 9px 14px;
+        font-size: 1.1875rem;
+    }
+
+    a {
+        display: block;
+        padding: 12px 14px;
+        border-top: 1px solid #dcdcdc;
+        color: #000;
+
+        &:last-child {
+            border-bottom: 1px solid #dcdcdc;
+        }
+    }
+}
+
+//Style for desktop
+@media (min-width: 1140px) {
+    // Related
+    .related {
+        padding: 10px 15px;
+
+        &__title, &__list, a {
+            display: inline
+        }
+
+        a, h4 {
+            border: none;
+            padding: 0;
+            font-size: 12px;
+
+            &:last-child {
+                border-bottom: none;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+        h4 {
+            &:after {
+                content: ':';
+            }
+        }
+
+        a {
+            &:after {
+                content: ' - ';
+            }
+        }
+    }
+}

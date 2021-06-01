@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+@import "../../bootstrap/bootstrap";
+
+// Plugin
+@import "../../components/modal/modal_custom";
+@import "../../components/modal/modal_custom_login";
+
+//Component
+@import '../../components/header_search';
+@import '../../components/header/header_detail_job';
+@import "../../components/sub_header";
+@import "../../components/star_review";
+@import "../../components/job/listing_item_job";
+@import "../../components/course/course";
+@import "../../components/custom_owl";
+@import "../../components/scroll_custom";
+@import "../../components/form_search_detail";
+@import "../../components/detail_job/filter_by_keyword";
+@import "../search_job/components/_aside_left";
+@import "../../components/detail_job/share_social";
+@import "../../components/detail_job/btn_as_mobile";
+@import "../../components/detail_job/box_suggest_work";
+@import "../../components/breadcrumb";
+
+// Component local
+@import "./components/_content";
+@import "./components/_company_info";
+
+// Common
+@import "./components/_common";
+
+

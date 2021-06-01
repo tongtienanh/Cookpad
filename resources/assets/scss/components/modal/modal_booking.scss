@@ -1,0 +1,164 @@
+//#modal-booking{
+//    display: inline-block;
+//}
+.order-content{
+    padding-bottom: 30px;
+}
+.breadcrumb{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    .breadcrumb-item{
+        color: #0288d1;
+        text-decoration: none;
+        background-color: transparent;
+    }
+}
+.order-name{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 10px 0 5px;
+    .txt-blue{
+        color: #0288d1!important;
+        font-weight: 700!important;
+    }
+}
+.tbnow-order-address{
+    olor: #6d6f71;
+    font-size: 13px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 20px;
+}
+.tbnow-order-title{
+    font-size: 18px;
+    color: #0288d1;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.tbnow-order-detail{
+    p{
+        margin-bottom: 10px;
+    }
+}
+.tbnow-form-booking{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #d7d7d7;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .tbnow-booking-name{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 11px;
+        margin-top: -3px;
+    }
+    .from-group{
+        width: 100%;
+        margin-bottom: 14px;
+        select{
+            width: 100%;
+        }
+    }
+    .fa-calendar , .fa-user{
+        color: #959595;
+        position: absolute;
+        top: 11px;
+        left: 23px;
+        font-size: 17px;
+    }
+    .input-group{
+        margin-bottom: 14px;
+    }
+    .custom-radio{
+        margin-bottom: 15px;
+        input{
+            position: absolute;
+            left: -9999px;
+            visibility: hidden;
+            box-sizing: border-box;
+            padding: 0;
+            overflow: visible;
+        }
+        .custom-radio [type=radio]:checked+label{
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            transition: .28s ease;
+            margin-bottom: 0;
+        }
+        label{
+            font-size: 13px;
+            white-space: nowrap;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 1px;
+                margin: 4px;
+                width: 16px;
+                height: 16px;
+                z-index: 0;
+                transition: .28s ease;
+            }
+        }
+    }
+    textarea{
+        width: 100%;
+    }
+    .title-form{
+        margin-bottom: 14px;
+    }
+    .invalid-feedback{
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+        font-size: .75rem;
+        color: red;
+    }
+    //.from-group{
+    //    margin-bottom: 14px;
+    //    position: relative;
+    //    border: 1px solid #ebebeb;
+    //    background-color: #fff;
+    //    select{
+    //        font-size: 13px;
+    //        border: 0;
+    //        padding-left: 35px;
+    //        height: 28px;
+    //        width: 100%;
+    //        option{
+    //            font-weight: normal;
+    //            display: block;
+    //            white-space: pre;
+    //            min-height: 1.2em;
+    //            padding: 0px 2px 1px;
+    //        }
+    //    }
+    //    input{
+    //        border: 0;
+    //        padding-left: 35px;
+    //        height: 28px;
+    //        width: 100%;
+    //        font-size: 16px;
+    //    }
+    //}
+    .btn-block{
+        background-color: #f37934;
+        border-color: #f37934;
+        color: #fff;
+    }
+    .flatpickr-input{
+        padding-left: 35px;
+    }
+}
+@media(max-width: 1200px)  {
+    //.jquery-modal{
+    //    display: none;
+    //}
+}

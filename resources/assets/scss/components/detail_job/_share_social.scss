@@ -1,0 +1,54 @@
+.box-share-job {
+    h4 {
+        &.box-title {
+            border-bottom: 1px solid $border-e5;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 0;
+        }
+    }
+    border: 1px solid $border-e5;
+    margin-top: 20px;
+    padding: 15px;
+
+    .btn {
+        display: inline-block !important;
+    }
+    .btn-social {
+        margin-right: 20px !important;
+        width: 30px;
+        height: 30px;
+        padding: 5px 8px;
+        margin-top: 10px !important;
+
+        i {
+            color: $white;
+        }
+    }
+
+    .btn-primary {
+        color: $white;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .btn-info {
+        color: $white;
+        background-color: #5bc0de;
+        border-color: #46b8da;
+    }
+
+    .btn-danger {
+        color: $white;
+        background-color: #d9534f;
+        border-color: #d43f3a;
+    }
+}
+
+@media (max-width: 992px) {
+    .box-share-job {
+        margin-bottom: 20px;
+    }
+}

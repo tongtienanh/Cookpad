@@ -1,0 +1,12 @@
+{
+    "Job": true,
+    "Blog": true,
+    "Company": true,
+    "User": true,
+    "Auth": true,
+    "Rss": true,
+    "Browse": true,
+    "StaticPage": true,
+    "Now": true,
+    "Review": true
+}

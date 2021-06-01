@@ -1,0 +1,110 @@
+#location {
+    flex-direction: row-reverse;
+    .keyword-expand__suggest {
+        padding-left: 0;
+        border-right: 1px solid $border-e5;
+    }
+    .keyword-expand__history {
+        border-right: none;
+        padding-left: 15px;
+    }
+}
+.keyword-expand {
+    width: 87.5%;
+    display: flex;
+    background: $white;
+    margin-top: 5px;
+    padding: 15px;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    z-index: 99;
+    max-height: 500px;
+    overflow-y: auto;
+    top: 55px;
+    &.hide{
+        display: none;
+    }
+    .head-box {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .content-box{
+        >div{
+            width: 33%;
+        }
+        a {
+            color: #484848;
+            display: block;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            line-height: 1.3;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .btn-close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: none;
+        img{
+            width: 14px;
+        }
+    }
+}
+
+.keyword-expand__history {
+    flex: 0 0 40%;
+    max-width: 40%;
+    border-right: 1px solid $border-e5;
+}
+
+.keyword-expand__suggest {
+    padding-left: 15px;
+    flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+    .keyword-expand {
+        display: block;
+        .btn-close{
+            display: block;
+        }
+    }
+    #keyword-title, #location {
+        width: 100%;
+        top: 65%;
+        .keyword-expand__history {
+            max-width: 100% !important;
+            flex: 1 !important;
+            border-right: none !important;
+            border-bottom: 1px dashed $border-e5;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            padding-left: 0 !important;
+        }
+
+        .content-box {
+            &.d-flex{
+                display: block;
+            }
+            > div {
+                width: 100%;
+            }
+
+            a {
+                display: block;
+            }
+        }
+
+        .keyword-expand__suggest {
+            padding-left: 0 !important;
+            border-right: none !important;
+        }
+    }
+}

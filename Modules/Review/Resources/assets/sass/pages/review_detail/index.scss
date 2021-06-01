@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/course/b_lazy";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_where_booking";
+
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/course/owl_course";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/container_table";
+@import "../../components/avatar";
+@import "../../components/list_item";
+@import "components/account_panel";
+@import "components/account_pane_mobile";
+@import "components/left_content";
+@import "components/block_right";
+@import "../../components/recommend_bot";
+//@import "components/content_review";
+//body{
+//    background: #F9F9F9;
+//}
+//@media (max-width: 768px){
+//    .block-left{
+//        width: 100% !important;
+//    }
+//}
+@media(max-width: 768px)  {
+    .container{
+        padding: 0 15px;
+    }
+
+}

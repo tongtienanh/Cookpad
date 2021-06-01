@@ -1,0 +1,80 @@
+.toolbar-wrapper{
+    background: #111;
+    height: 25px;
+    position: relative;
+    z-index: 1;
+    .container{
+        display: flex;
+        max-width: 1110px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        .right-item{
+            float: left;
+            height: 25px;
+            border-left: 1px solid rgba(255,255,255,.1);
+            border-right: 1px solid rgba(255,255,255,.1);
+            input{
+                height: 25px;
+                border: none;
+                background-color: transparent;
+                box-sizing: border-box;
+                padding: 0 6px;
+                font-size: 10px;
+                color: #FFFFFF;
+                width: 154px;
+                outline: none;
+                float: left;
+                line-height: 25px;
+            }
+        }
+    }
+    .lef-item{
+        display: flex;
+        align-items: center;
+        >div{
+            display: flex;
+            min-width: 150px;
+            span{
+                padding-left: 30px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                color: #666666;
+                background: url(https://news.timviec.com.vn/wp-content/themes/newsv2timviec/assets/image/btn-up.png) left no-repeat;
+            }
+        }
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    padding-left: 20px;
+                    background-image: url(https://kenh14cdn.com/web_images/toolbar-topic-icon.png);
+                    background-position: left 0 center;
+                    background-repeat: no-repeat;
+                    font-family: SFD-Semibold;
+                    font-size: 12px;
+                    line-height: 25px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    display: block;
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
+
+}
+@media(max-width: 768px)  {
+    .toolbar-wrapper{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .toolbar-wrapper{
+        display: none;
+    }
+}

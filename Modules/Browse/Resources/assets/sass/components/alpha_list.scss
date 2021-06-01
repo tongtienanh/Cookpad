@@ -1,0 +1,131 @@
+#browse {
+    padding-top: 30px;
+    border-top: 1px solid $color-f2;
+
+    .title {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .box-title {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 15px;
+
+        h2 {
+            padding-bottom: 10px;
+            border-bottom: 1px solid;
+            font-size: 18px;
+            font-weight: 600;
+            color: $color-333;
+            text-transform: uppercase;
+        }
+
+        .line {
+            flex: 1;
+            height: 1px;
+            background: #ebebeb;
+        }
+    }
+
+    .alpha-list {
+        .item {
+            width: 34px;
+            height: 34px;
+            border-radius: 3px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f2f2f2;
+            color: $color-333;
+            text-transform: uppercase;
+
+            &:hover, &.active {
+                background: $success;
+                color: $white;
+            }
+        }
+    }
+
+    .alpha-top {
+        padding: 20px 0 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .alpha-fixed {
+        position: fixed;
+        width: auto;
+        height: 85vh;
+        z-index: 100;
+        overflow: hidden;
+        overflow-y: auto;
+        right: 50px;
+        top: 50px;
+        display: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .item {
+            margin-bottom: 0;
+            margin-right: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 0;
+        }
+    }
+
+    .list-company-tag {
+        .item-company-tag {
+            a {
+                color: $color-333;
+                font-size: 15px;
+
+                &:hover {
+                    color: $success;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    #browse {
+        .alpha-fixed {
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #browse {
+        padding-top: 15px;
+
+        .title {
+            font-size: 24px;
+        }
+
+        .box-title {
+            h2 {
+                font-size: 14px;
+            }
+        }
+
+        .alpha-fixed {
+            right: 0;
+
+            .item {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+

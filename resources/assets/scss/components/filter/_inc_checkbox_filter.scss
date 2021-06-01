@@ -1,0 +1,43 @@
+/*Checkboxes styles*/
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 20px;
+    font: 14px/20px 'Open Sans', Arial, sans-serif;
+    color: $color-333;
+    cursor: pointer;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $success;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    top: -5px;
+    right: 7px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(45deg);
+}

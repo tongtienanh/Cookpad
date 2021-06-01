@@ -1,0 +1,559 @@
+@charset 'UTF-8';
+@import "../../bootstrap/bootstrap";
+@import "../../components/modal/modal_custom";
+@import "../../components/select2_custom";
+@import "~select2/dist/css/select2.min.css";
+
+*{
+    font-family: Roboto, sans-serif;
+}
+body{
+    background: #ebebeb;
+}
+//menu
+.menu{
+    position: fixed;
+    width: 288px;
+    height: 100%;
+    overflow: auto;
+    background: $white;
+    padding: 0;
+    li{
+        list-style: none;
+        border-bottom: 1px solid $border-e5;
+        a{
+            text-decoration: none;
+            line-height: 24px;
+            padding: 10px 20px;
+            display: block;
+            color: $color-333;
+            font-size: 14px;
+            transition: .2s;
+            &:hover{
+                color: $white;
+                background: $success;
+            }
+        }
+    }
+}
+
+#welcome-body, #welcome-back-body{
+    span{
+        display: block;
+        line-height: 24px;
+        font-size: 16px;
+        color: $color-333;
+    }
+    .content-welcome, .content-welcome-back{
+        display: flex;
+        .content{
+            min-width: 400px;
+            max-width: 400px;
+        }
+        .illustration{
+            max-width: 200px;
+            min-width: 200px;
+            img{
+                width: 100%;
+            }
+        }
+        .item{
+            display: flex;
+            span{
+                display: inline-block;
+                img{
+                    width: 16px;
+                    margin-right
+                    : 12px;
+                    position: relative;
+                    top: 4px;
+                }
+            }
+        }
+    }
+    .update-profile{
+        margin: 20px auto 5px auto;
+        text-align: center;
+        padding: 16px;
+        width: 300px;
+        display: block;
+        font-weight: 500;
+    }
+}
+
+#welcome-back{
+    .later{
+        color: $color-333;
+        font-size: 14px;
+    }
+}
+.modal{
+    max-width: 600px;
+}
+.modal-header{
+    .title {
+        text-align: center;
+        font-weight: 500;
+        color: $white;
+    }
+}
+
+.modal-footer{
+    .see-last{
+        text-align: center;
+        display: block;
+        color: #666666;
+        margin: 10px;
+        text-decoration: underline;
+        font-size: 14px
+    }
+}
+
+//help second
+//guest-info
+//register-job
+
+#register-job, #help-second{
+    .money-mobile{
+        padding: 0;
+    }
+}
+
+#help-second, #guest-info, #user-info{
+    .choose-file{
+        position: relative;
+        input{
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+        }
+        .txt-file{
+            display: inline-block;
+            position: absolute;
+            top: 35px;
+            padding: 10px 20px;
+            border: 2px solid $success;
+            border-radius: 32px;
+            color: $success;
+            font-size: 14px;
+            left: 0;
+        }
+        .val-file{
+            position: absolute;
+            top: 45px;
+            display: inline-block;
+            font-size: 14px;
+            color: $color-333;
+        }
+    }
+    .text-right{
+        margin-top: 50px;
+    }
+}
+#guest-info, #user-info{
+    .modal-header{
+        .title{
+            text-align: left;
+            margin-bottom: 4px;
+        }
+        span{
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+            color: $white;
+        }
+    }
+    .login{
+        margin-top: 56px;
+        span{
+            display: block;
+            color: $color-333;
+            font-size: 14px;
+        }
+    }
+    textarea{
+        line-height: 24px;
+    }
+    .btn-next{
+       padding: 12px 60px;
+    }
+}
+#user-info{
+    .profile{
+        text-decoration: underline;
+        margin: 15px 0;
+        display: block;
+        font-size: 14px;
+    }
+}
+//help three
+#help-three{
+    .list-exp{
+        display: table;
+        .item-exp{
+            float: left;
+            border: 1px solid $border-e5;
+            margin-right: 12px;
+            padding: 5px 6px;
+            border-radius: 2px;
+            img{
+                width: 14px;
+            }
+            span{
+                font-size: 14px;
+                padding: 4px;
+                color: $color-333
+            }
+        }
+    }
+    .search-exp{
+        position: relative;
+        input{
+            padding-left: 36px;
+        }
+        img{
+            width: 16px;
+            position: absolute;
+            top: 37px;
+            left: 12px;
+        }
+    }
+    .prop-exp{
+        >span{
+            color: $color-333;
+        }
+    }
+    .list-prop-exp{
+        .item-prop-exp{
+            border: 1px solid $border-e5;
+            margin-right: 12px;
+            padding: 6px 8px;
+            border-radius: 2px;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: $color-333;
+        }
+    }
+}
+
+//help last
+#help-last{
+    textarea{
+        resize: vertical;
+    }
+}
+
+//update avatar
+#update-avatar{
+    .update-avatar{
+        position: relative;
+        .avatar{
+            width: 98px;
+            height: 98px;
+            margin: auto;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .camera{
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            left: 53%;
+            bottom: -1px;
+            background: $white;
+            border: 1px solid $border-e5;
+            border-radius: 50%;
+            img{
+                width: 16px;
+                display: block;
+                margin: auto;
+                padding-top: 4px;
+            }
+        }
+    }
+    form{
+        .description{
+            display: block;
+            font-size: 16px;
+            color: $color-333;
+            line-height: 24px;
+        }
+        input{
+            position: absolute;
+            top: 3px;
+            left: 41%;
+            padding: 40px 0;
+            width: 108px;
+            border-radius: 50%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        button{
+            margin: auto;
+            display: block;
+        }
+    }
+}
+
+//register-job
+#register-job{
+    form{
+        .description{
+            color: $color-333;
+            font-size: 14px;
+            display: block;
+        }
+        .btn-submit{
+            padding: 12px 30px;
+        }
+    }
+    .salary{
+        select{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+//user info
+#user-profile{
+    .modal-header{
+        .title{
+            text-align: left;
+            margin-bottom: 4px;
+        }
+        span{
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+            color: $white;
+        }
+    }
+    .profile-online{
+        border: 1px solid $border-e5;
+        padding: 15px 12px;
+        position: relative;
+        .form-group{
+            margin-bottom: 0;
+            label{
+                font-size: 16px;
+                margin-left: 6px;
+            }
+            span{
+                display: block;
+                font-size: 12px;
+                color: #A94442;
+                margin-top: 4px;
+            }
+            >a{
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 8px;
+                font-size: 14px;
+                padding: 4px 8px;
+                border: 1px solid $border-e5;
+                border-radius: 5px;
+                color: #666666;
+                transition: .2s;
+                &:hover{
+                    background: $success;
+                    color: $white;
+                }
+            }
+        }
+    }
+    textarea{
+        line-height: 24px;
+        resize: vertical;
+    }
+    .profile-other{
+        text-decoration: underline;
+        margin: 15px 0;
+        display: block;
+        font-size: 14px;
+    }
+    .btn-next{
+        padding: 12px 60px;
+    }
+}
+
+//confirm profile //profile-confirm-upload
+#profile-confirm-detail, #profile-confirm-upload{
+    .modal-header{
+        .title{
+            text-align: left;
+            margin-bottom: 8px;
+        }
+        span{
+            &.title-des{
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+            color: $white;
+        }
+    }
+    .profile-confirm, .profile-confirm-upload{
+        padding: 15px;
+        border: 1px solid $border-e5;
+        position: relative;
+        strong{
+            display: block;
+            font-size: 16px;
+            color: #333;
+        }
+        .profile-online{
+            display: block;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        span{
+            font-size: 14px;
+            color: #666666;
+        }
+        p{
+            line-height: 24px;
+            color: $color-333;
+            margin-bottom: 0;
+            span{
+                display: block;
+                color: $color-333;
+            }
+        }
+        .edit{
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 8px;
+            font-size: 14px;
+            padding: 4px 8px;
+            border: 1px solid $border-e5;
+            border-radius: 5px;
+            color: #666666;
+            transition: .2s;
+            &:hover{
+                background: $success;
+                color: $white;
+            }
+        }
+    }
+    .description{
+        font-size: 14px;
+        line-height: 24px;
+        color: $color-333;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .btn-submit{
+        padding: 12px 60px;
+    }
+}
+
+#profile-confirm-upload{
+    .profile-confirm-upload{
+        .info{
+            .file{
+                a{
+                    font-size: 15px;
+                }
+            }
+            .val{
+                color: $color-333;
+            }
+            .title{
+                margin-bottom: 5px;
+            }
+
+        }
+    }
+}
+
+//apply-success
+#apply-success{
+    .title-body{
+        display: block;
+        font-size: 14px;
+        line-height: 22px;
+        color: $color-333;
+    }
+    .btn-next{
+        display: block;
+        margin: 10px auto 16px auto;
+        padding: 10px 64px;
+    }
+    i{
+        display: block;
+        font-size: 13px;
+        padding: 10px 10px;
+        border: 1px solid $border-e5;
+        border-radius: 5px;
+        a{
+            font-weight: 500;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    #register-job, #help-second{
+        .money-mobile{
+            margin: 15px 0;
+            padding: 0 15px;
+        }
+    }
+
+    #guest-info, #user-info{
+        .login{
+            margin-top: 56px;
+            span{
+                display: block;
+                color: $color-333;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    #user-profile{
+        .profile-online{
+            .form-group{
+                > a{
+                    display: inline-block;
+                    position: inherit;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    #welcome-body, #welcome-back-body {
+        .content-welcome, .content-welcome-back {
+            display: block;
+            .content {
+                min-width: 100%;
+                max-width: 100%;
+            }
+            .illustration{
+                margin-top: 20px;
+                min-width: 100%;
+                max-width: 100%;
+                img{
+                    width: 60%;
+                    margin: auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-header{
+        padding: 6px 36px 6px 15px;
+    }
+}

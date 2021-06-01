@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_where_booking";
+
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/course/owl_course";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/container_review";
+@import "../../../../../../../resources/assets/scss/components/breadcrumb";
+@import "components/top_info";
+@import "components/image";
+@import "components/block_left";
+@import "components/block_right";
+
+body{
+    background: #F9F9F9;
+}
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media(max-width: 768px)  {
+    .breadcrumb{
+        display: none;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px)  {
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,124 @@
+@import "./../filter/inc_radio_filter";
+@import "./../filter/inc_checkbox_filter";
+
+#bg-black{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: black;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    display: none;
+}
+#filter-city,
+#filter-location,
+#filter-career,
+#filter-salary,
+#filter-experience,
+#filter-fr-work,
+#filter-level{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    overflow: auto;
+    background: $white;
+    transition: all 0.3s linear;
+    -webkit-overflow-scrolling: touch;
+    &.show{
+        height: 70%;
+    }
+    .img-svg {
+        width: 15px;
+        cursor: pointer;
+    }
+    .search{
+        height: 56px;
+        box-shadow: 0 4px 2px -2px $border-e5;
+        display: flex;
+        background: $white;
+    }
+    .prev-city,
+    .prev,
+    .prev-career,
+    .prev-salary,
+    .prev-experience,
+    .prev-fr-work,
+    .prev-level{
+        display: inline-block;
+        margin-top: 19px;
+        width: 48px;
+        img {
+            width: 20px;
+            display: block;
+            margin: auto;
+        }
+    }
+    .input-city,
+    .input-location,
+    .input-career,
+    .input-salary,
+    .input-experience,
+    .input-fr-work,
+    .input-level{
+        width: 100%;
+        input{
+            width: 100%;
+            height: 56px;
+            border: none;
+            font-size: 14px;
+            padding-right: 15px;
+            padding-left: 0;
+            padding-top: 12px;
+            &::-webkit-input-placeholder {
+                color: $color-555;
+            }
+        }
+    }
+    .filter-c,
+    .filter-lt,
+    .filter-ca,
+    .filter-sa,
+    .filter-ex,
+    .filter-w,
+    .filter-le{
+        margin: 15px 0;
+        .title {
+            margin-left: 15px;
+            text-transform: uppercase;
+            font-size: 13px;
+            span{
+                color: $text-light;
+            }
+        }
+        .list-item-c,
+        .list-item-l,
+        .list-item-ca,
+        .list-item-sa,
+        .list-item-ex,
+        .list-item-w,
+        .list-item-le{
+            padding: 0 15px;
+            margin-top: 15px;
+            li{
+                height: 40px;
+            }
+        }
+    }
+}
+
+#filter-city,
+#filter-career,
+#filter-salary,
+#filter-experience,
+#filter-fr-work,
+#filter-level{
+    z-index: 102;
+}
+#filter-location{
+    z-index: 103;
+}

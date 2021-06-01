@@ -1,0 +1,18 @@
+.title-season{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 16px;
+    color: #4A4A4A;
+    font-weight: 600;
+}
+.item-season{
+    position: relative;
+    span{
+        position: absolute;
+        bottom: 0;
+        left: 8px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,16 @@
+#section-link{
+    padding-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+    #section-link{
+        padding-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #section-link{
+        padding-bottom: 15px;
+    }
+}

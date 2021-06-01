@@ -1,0 +1,10 @@
+@import '~global_resource/assets/scss/bootstrap/bootstrap';
+
+//Component Global
+@import "../../../../../../../resources/assets/scss/components/sub_header";
+
+//Components
+@import "../../components/alpha_list";
+
+//Include
+@import "components/content";

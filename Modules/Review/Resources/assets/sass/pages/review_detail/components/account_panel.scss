@@ -1,0 +1,109 @@
+.account-panel{
+    margin: 0 auto;
+}
+.bottom{
+    position: relative;
+    padding: 0 15px;
+    .author-avatar{
+        width: 50px;
+        .thumbnail-wrapper{
+            padding-top: 100%;
+            background-color: transparent;
+            width: 100%;
+            position: relative;
+            align-items: center!important;
+            justify-content: center!important;
+        }
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .author-info{
+        height: 50px;
+        margin-left: 24px;
+        .author-name{
+            align-items: center;
+            color: #000;
+            img{
+                width: 45px;
+                margin-bottom: 4px;
+                margin-left: 5px;
+            }
+        }
+        .btn-follow{
+            float: left;
+            margin-left: 20px;
+            text-align: right!important;
+            flex-grow: 1!important;
+            button{
+                border-color: #9b9b9b;
+                color: #9b9b9b;
+                border: 1px solid #979797;
+                text-align: center;
+                border-radius: 7px;
+                transition: all .2s ease-out;
+                -webkit-transition: all .2s ease-out;
+                -moz-transition: .2s all ease-out;
+                font-size: 12px;
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+        .author-summary{
+            color: #9b9b9b;
+            font-size: 13px;
+            .name-place{
+                color: #f60;
+            }
+        }
+    }
+    .rating-post{
+        width: 140px;
+        height: 55px;
+        border-radius: 15px;
+        background-color: rgba(255,138,0,.1);
+        float: right;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        text-align: center;
+        line-height: 55px;
+        i{
+            font-size: 24px;
+            color: #ff9933;
+
+        }
+        .span-post{
+            font-family: Helvetica;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            color: #000;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .span-point{
+            font-size: 20px;
+            font-family: Helvetica;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            color: #000;
+        }
+    }
+}
+@media(max-width: 768px)  {
+    .account-panel{
+        display: none;
+    }
+}

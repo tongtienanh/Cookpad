@@ -1,0 +1,195 @@
+.block-right{
+    margin-left: 3%;
+    .content-register{
+        width: 100%;
+        background-color: #fff;
+        border-radius: 20px;
+        float: left;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        img{
+            width: 100%;
+        }
+        .des{
+            font-size: 15px;
+            margin: 15px;
+        }
+        .register-item{
+            width: 50%;
+            float: left;
+            font-size: 14px;
+            .dang-ky{
+                white-space: nowrap;
+                color: #000;
+                text-align: center;
+                width: 70%;
+                margin: auto;
+                padding: 5px 10px;
+                font-weight: 600;
+                background-color: #d5d3d3;
+                border-radius: 10px;
+            }
+            .dang-nhap{
+                white-space: nowrap;
+                color: #f60;
+                text-align: center;
+                width: 70%;
+                margin: auto;
+                padding: 5px 10px;
+                font-weight: 600;
+                background-color: rgba(255,102,0,.25098);
+                border-radius: 10px;
+            }
+        }
+    }
+    .content-download{
+        width: 100%;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 5%;
+        float: left;
+        margin-top: 30px;
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+
+        }
+        .qrcode-box{
+            width: 35%;
+            float: left;
+            img{
+                width: 100%;
+                float: left;
+            }
+        }
+        .download-app{
+            width: 60%;
+            float: left;
+            .icon-app{
+                margin-left: 10%;
+                margin-bottom: 10%;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+.img-level-user{
+    display: none;
+}
+.related-location-wrapper{
+    margin-top: 30px;
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    border-radius: 20px;
+    h2{
+        padding: 24px 24px 16px 24px;
+    }
+    .user-box{
+        margin: 8px 16px;
+        .author-wrapper{
+            width: 100%;
+            border-radius: 8px;
+            padding: 4px 8px;
+            .author-avatar{
+                width: 12%;
+                .thumbnail-wrapper{
+                    padding-top: 100%;
+                    background-color: transparent;
+                    width: 100%;
+                    position: relative;
+                    align-items: center!important;
+                    justify-content: center!important;
+                    img{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        margin: 0 auto;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    .place-wrapper{
+        .info-wrapper{
+            margin-bottom: 4px;
+            align-items: center!important;
+            flex-grow: 1!important;
+        }
+    }
+}
+.place-avatar{
+    width: 18%;
+    border-radius: 6px;
+    display: block;
+    min-width: 60px;
+    .thumbnail-wrapper{
+        padding-top: 100%;
+        background-color: transparent;
+        width: 100%;
+        position: relative;
+        align-items: center!important;
+        justify-content: center;
+        img{
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+.box-info{
+    color: #000;
+    font-size: 14px;
+    margin-left: 16px;
+    h3{
+        font-size: 13px;
+        max-width: 100%;
+    }
+    .text-truncate{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 4px;
+    }
+    p{
+        font-size: 12px;
+        color: #707070;
+    }
+    .item-rating {
+        i{
+            color: #F78A2B;
+        }
+    .rating-img{
+        width: 10%;
+        .span-post b{
+            font-weight: bolder;
+        }
+    }
+}
+}
+@media (max-width: 768px){
+    .block-right{
+        display: none;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px)  {
+    .box-info{
+        margin-left: 8px;
+    }
+}

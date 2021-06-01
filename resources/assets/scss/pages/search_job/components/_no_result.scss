@@ -1,0 +1,27 @@
+.alert-no-resutl {
+  padding: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.suggest-text {
+  font-size: 0.9rem;
+  h4 {
+    margin-bottom: 15px;
+      font-size: 1rem;
+  }
+  ul {
+    margin-left: 30px;
+    li {
+      list-style: disc;
+      margin-bottom: 5px;
+    }
+  }
+}
+.receive-email {
+  text-align: center;
+  padding: 1rem;
+  font-size: 13px;
+  a {
+    color: $main-text;
+  }
+}

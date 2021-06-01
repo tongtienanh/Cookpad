@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/custom_owl";
+@import "../../../../../../../resources/assets/scss/components/course/b_lazy";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_like_btn";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+@import "../../../../../../../resources/assets/scss/components/container_blog";
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/paginate";
+@import "../../../../../../../resources/assets/scss/components/latest_cooksnaps_collection";
+@import "../../../../../../../resources/assets/scss/components/blog_list_counter";
+@import "../../../../../../../resources/assets/scss/components/blog_newsfeed_item";
+@import "../../../../../../../resources/assets/scss/components/blog_main_news";
+@import "../../../../../../../resources/assets/scss/components/breadcrumb";
+@import "../../../../../../../resources/assets/scss/components/paginate";
+@import "../../../../../../../resources/assets/scss/components/blog_nav";
+@import "../../../../../../../resources/assets/scss/components/blog_toolbar";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_blog";
+
+@import "components/block_left";
+
+.mobile{
+    display: none;
+}
+.container{
+    max-width: 1110px!important;
+}
+body{
+    counter-reset: mini-step;
+
+}
+.box-content{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .pc-console{
+        display: none;
+    }
+    .box-content{
+        flex-direction: column;
+
+    }
+    .box-content .box-home-main{
+        width: 100%!important;
+    }
+    .list-blog {
+        display: none;
+    }
+}
+@media(min-width: 768px)  {
+    .box-content  .box-home-main{
+        width: 100% !important;
+    }
+}

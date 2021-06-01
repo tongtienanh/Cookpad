@@ -1,0 +1,13 @@
+{
+    "name": "Rss",
+    "alias": "rss",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Rss\\Providers\\RssServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

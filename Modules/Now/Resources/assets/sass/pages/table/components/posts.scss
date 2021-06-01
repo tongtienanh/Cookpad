@@ -1,0 +1,149 @@
+.card{
+    width: 368px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    .card-img{
+        //width: 370px;
+        height: 330px;
+        img{
+            width: 100%;
+        }
+    }
+    .card-body{
+        border: 1px solid #ebebeb;
+        border-top: 0;
+        border-radius: 0 0 5px 5px;
+        width: 101%;
+    }
+}
+.active {
+    color: #f37934;
+    font-weight: 700;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -23px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 10px solid #f37934;
+    }
+}
+.tbnow-co-brand{
+    padding-left: 35px;
+}
+.item-brand{
+   .item-image{
+       width: 222px;
+   }
+
+}
+h2{
+    font-size: 21px;
+    color: #525252;
+    text-transform: uppercase;
+    margin-left: -10px;
+}
+.owl-nav{
+    display: none;
+}
+
+// mobile post
+.mobile-post{
+    display: none;
+}
+.feature{
+    background: #fff;
+    position: relative;
+    display: block;
+    .feature-heading{
+        padding: 10px 10px 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 100px;
+        position: relative;
+        .feature-heading-more{
+            position: absolute;
+            font-size: 13px;
+            display: block;
+            right: 10px;
+            top: 0;
+            padding: 11px 0;
+            font-weight: 400;
+            color: #3c3c3c;
+        }
+    }
+    .feature-suggest{
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 1px 5px 10px;
+        font-size: 0;
+    }
+    .feature-suggest-item{
+        font-size: 1rem;
+        display: inline-block;
+        padding: 0 5px;
+        width: 160px;
+        position: relative;
+        vertical-align: top;
+        .feature-suggest-content{
+            position: relative;
+        }
+        .feature-img{
+            border-radius: 3px;
+            margin-bottom: 8px;
+            width: 100%;
+            padding-bottom: 62.5%;
+            background: #eaeaea;
+            position: relative;
+            overflow: hidden;
+            img{
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                height: 100%;
+                object-fit: cover;
+                vertical-align: middle;
+                border-style: none;
+            }
+        }
+        .feature-h-info{
+            color: rgb(28, 28, 28);
+            flex: 1 1;
+            overflow: hidden;
+            h4{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-weight: 500;
+                line-height: 18px;
+                font-size: 13px;
+                margin-bottom: auto;
+            }
+        }
+    }
+}
+@media(max-width: 768px)  {
+    .home-blog{
+        display: none;
+    }
+    .mobile-post{
+        display: block;
+    }
+}
+@media(min-width: 768px) and(max-width: 1200px)  {
+    .tbnow-place-select{
+        overflow-x: scroll;
+        .col-4{
+            width: 100%;
+            margin-right: 10px;
+        }
+    }
+
+}

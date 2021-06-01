@@ -1,0 +1,106 @@
+.fillter_category {
+    ul {
+        display: flex;
+        margin-bottom: 4px;
+
+        li {
+            padding: 16px;
+
+            a {
+                color: #4a4a4a;
+                letter-spacing: .05em;
+                font-size: .875rem;
+
+
+            }
+            &:last-child:hover .tabs-dropdown{
+                display: block;
+            }
+        }
+
+        .tabs-dropdown {
+            display: none;
+            //width: 150px;
+            //padding: 10px;
+            background: #FFFFFF;
+            z-index: 2;
+            white-space: nowrap;
+            //box-shadow: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 47px;
+            right: 0;
+            border-radius: 8px;
+            border: 1px solid #ECEBE9;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            li{
+                &:hover{
+                    background:#ecebe9;
+                }
+            }
+        }
+    }
+
+    .items-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .capitalize {
+            padding-left: 10px;
+        }
+
+        .user-recipe-search {
+            margin: 10px;
+            position: relative;
+
+            .fa-search {
+                position: absolute;
+                left: 15px;
+                top: 8px;
+                color: $color-cecece;
+            }
+        }
+
+        .user-text-field {
+            width: 250px;
+            padding: 8px 8px 8px 28px;
+            font-size: 16px;
+            margin-right: 8px;
+
+            &::placeholder {
+                color: $color-cecece;
+            }
+        }
+
+        .button-search {
+            border-style: none;
+            background-color: #ecebe9;
+            color: #767676;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    ul {
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+    .capitalize {
+        display: none;
+
+    }
+    .box-search {
+        flex-direction: column;
+    }
+    .create-collection {
+        order: 1;
+    }
+}
+
+@media(max-width: 410px) {
+    .fillter_category .items-center .button-search {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,46 @@
+#header-detail{
+    display: none;
+}
+
+#tab-info{
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+#tab-job-company, #tab-company-info{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    #header-detail{
+        display: block;
+    }
+    #header-default,
+    #header-search,
+    #sub-header {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    #main {
+        &.pt {
+            padding-top: 75px;
+        }
+    }
+    .scroll-top{
+        bottom: 110px;
+    }
+    .support_box {
+        bottom: 70px;
+    }
+    .btn-as-mobile{
+        display: block;
+    }
+    #tab-job-company, #tab-company-info{
+       &.active{
+           display: block;
+       }
+    }
+}

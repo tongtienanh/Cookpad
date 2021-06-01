@@ -1,0 +1,36 @@
+{
+  "name": "workable/platform",
+  "description": "The Workable Platform based on Laravel Framework.",
+  "keywords": [
+    "Workable",
+    "Workable platform"
+  ],
+  "authors": [
+    {
+      "name": "Hungokata",
+      "email": "hungokata630@gmail.com"
+    }
+  ],
+  "type": "project",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Workable\\Support\\": "support/src",
+      "Workable\\Base\\": "base/src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Workable\\Base\\Providers\\BaseServiceProvider",
+        "Workable\\Support\\Providers\\SupportServiceProvider"
+      ],
+      "aliases": {
+
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

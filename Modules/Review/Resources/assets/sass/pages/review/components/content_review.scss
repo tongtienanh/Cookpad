@@ -1,0 +1,174 @@
+.content-review {
+    .title-collection {
+        font-family: Helvetica;
+        font-size: 23px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .title-active {
+        color: #000;
+        font-weight: 700;
+    }
+
+    .title-inactive {
+        color: #707070;
+        font-weight: 400;
+    }
+
+    ul {
+        width: 100%;
+        float: left;
+        white-space: nowrap;
+
+        li {
+            &:hover h3::before {
+                opacity: 1;
+                visibility: unset;
+            }
+
+            &.active {
+                color: #f60;
+                background-color: rgba(255, 102, 0, .25098);
+            }
+
+            background-color: #dfdfdf;
+            float: left;
+            margin-right: 10px;
+            padding: 7px 20px;
+            border-radius: 31px;
+            font-size: 15px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #707070;
+        }
+
+        h3 {
+            position: relative;
+            font-size: 16px;
+            color: #707070;
+            font-weight: 500;
+
+            &:before {
+                transition: all .2s ease-in-out;
+                content: " ";
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                height: 4px;
+                width: 70%;
+                border-radius: 4px;
+                right: 0;
+                margin: 0 auto;
+                box-shadow: 0 5px 5px -1px pink;
+                background: #f60;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    //.review-item :hover .number-index{
+    //    opacity: 1;
+    //}
+
+    .list-item {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+}
+
+.btn {
+    background: #f60;
+    width: 100px;
+    height: 38px;
+    border-radius: 24px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+
+    &:hover {
+        color: #212529;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-review .title-collection {
+        display: none;
+    }
+    .content-review ul h3 {
+        font-size: 14px;
+    }
+    .content-review ul {
+        margin-top: 10px;
+        justify-content: space-around;
+
+        li {
+            padding: 0;
+            background-color: unset;
+
+            &:nth-child(6) {
+                display: none;
+            }
+
+            &:nth-child(7) {
+                display: none;
+            }
+
+            &.active {
+                background-color: unset;
+
+                h3 {
+                    color: red;
+                }
+            }
+        }
+    }
+    //.list-item div{
+    //    &:first-child{
+    //        display: none;
+    //    }
+    //}
+    .hidden-mobile {
+        width: 50% !important;
+
+        &:first-child {
+            display: none;
+        }
+    }
+    .content-review .card_rating {
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+        margin-bottom: 8px;
+        page-break-inside: avoid;
+        -webkit-column-break-inside: avoid;
+        -moz-column-break-inside: avoid;
+        break-inside: avoid;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    }
+    .btn {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .content-review ul{
+        overflow-x: auto;
+    }
+}

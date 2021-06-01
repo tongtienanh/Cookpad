@@ -1,0 +1,172 @@
+#background-bg {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(10,13,20,.4);
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
+}
+.pushmenu {
+    background: $white;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    width: 280px;
+    display: inline-block;
+    right: -100%;
+    transition: .3s;
+    &.main {
+        right: inherit;
+        left: -100%;
+        &.show {
+            right: inherit;
+            left: 0;
+        }
+    }
+    &.show {
+        right: 0;
+    }
+    .user-area {
+        padding: 12px 0 7px 0;
+    }
+    .user-action {
+        margin-top: -5px;
+        padding: 10px 0 15px 0;
+        border-bottom: 1px solid $border-e5;
+        a {
+            background: $white;
+            border: 1px solid $success;
+            box-sizing: border-box;
+            border-radius: 45px;
+            padding: 10px 16px;
+            display: inline-block;
+            color: $success;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            width: calc(50% - 26px);
+            text-align: center;
+            &:nth-child(1) {
+                margin-right: 8px;
+                margin-left: 15px;
+            }
+            &:nth-child(2) {
+                color: #fff;
+                background: $success;
+                margin-left: 8px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.slide-menu {
+    overflow-y: auto;
+    height: calc(100% - 132px);
+    padding-bottom: 0;
+    a {
+        display: inline-block;
+    }
+    li {
+        line-height: 1;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        &:hover, &.active {
+            background: #f5f6f7;
+        }
+        a {
+            padding: 9px 36px 8px 19px !important;
+            width: calc(100% - 55px);
+            font-size: 14px;
+            span {
+                &:nth-child(1) {
+                    margin-top: 0;
+                    height: 19px;
+                    float: left;
+                    color: #2c2f36;
+                    font-size: 14px;
+                }
+                &:nth-child(2) {
+                    margin-left: 20px;
+                    display: block;
+                    margin-top: 0;
+                    line-height: 20px;
+                    float: left;
+                }
+            }
+        }
+        ul {
+            background: #f5f6f7;
+            display: none;
+            &.show-sub {
+                display: block;
+            }
+        }
+        li {
+            &.lv1 {
+                padding-left: 58px;
+                a {
+                    padding: 10px 19px 10px 0 !important;
+                    width: calc(100% - 77px);
+                    line-height: 20px;
+                    display: inline-block;
+                    white-space: nowrap;
+                    color: #2c2f36;
+                }
+                &:before {
+                    top: 0;
+                    background: #ebedf0 !important;
+                }
+            }
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+    .slide-menu ul li.lv0:after,
+    .dropdown-navigative-menu li li.lv1::before {
+        position: absolute;
+        height: 1px;
+        background: #f5f6f7;
+        bottom: 0;
+        left: 58px;
+        content: '';
+        width: 100%;
+    }
+}
+
+.dropdown-navigative-menu {
+    li {
+        &.bg_menu {
+            background: #f5f6f7;
+            line-height: .9;
+            a {
+                padding: 14px 10px 14px 19px !important;
+            }
+        }
+        a {
+            padding: 10px 36px 10px 16px !important;
+            width: calc(100% - 55px);
+            color: #2c2f36;
+            display: flex;
+        }
+    }
+    .arrrow {
+        top: 3px;
+        float: right;
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        right: 0;
+        margin-right: 9px;
+        background: url('../../images/icon/ic_caret_down.svg') no-repeat center center;
+        &.uparrrow {
+            background: url('../../images/icon/ic_caret_up.svg') no-repeat center center;
+        }
+    }
+}

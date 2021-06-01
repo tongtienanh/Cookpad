@@ -1,0 +1,31 @@
+.recently-viewed{
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    padding: 20px 20px 15px;
+    margin-bottom: 34px;
+}
+.nav-list{
+    margin-bottom: 24px;
+    border-bottom: 1px solid #d7d7d7;
+    .nav-item{
+        color: #959595;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 2px 0 14px;
+        margin-right: 50px;
+        position: relative;
+        &.active{
+            color: #f37934;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #f37934;
+            }
+        }
+    }
+}

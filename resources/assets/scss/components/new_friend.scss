@@ -1,0 +1,116 @@
+.new-friend{
+
+}
+.icon-drop{
+    position: relative;
+    .option{
+        display: none;
+        background: #FFFFFF;
+        z-index: 2;
+        white-space: nowrap;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        border-radius: 8px;
+        border: 1px solid #ECEBE9;
+        box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+        li{
+            padding: 16px;
+            color: #4a4a4a;
+            letter-spacing: 0.05em;
+            font-size: 0.875rem;
+            &:hover{
+                background: #ecebe9;
+            }
+        }
+    }
+}
+.author{
+    img{
+        width: 24px!important;
+        height: 24px;
+    }
+    .author-name{
+        font-size: 14px;
+        color: #767676;
+    }
+}
+.card{
+    margin-top: .5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255,255,255,var(--tw-bg-opacity));
+    border-radius: .25rem;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgba(206,206,205,var(--tw-border-opacity));
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    .relative{
+        position: relative;
+    }
+    .block{
+        overflow: hidden;
+        border-top-right-radius: .25rem;
+        border-top-left-radius: .25rem;
+        background-color: rgba(0,0,0,.75)
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            border-radius: 6px;
+        }
+    }
+    .feed-body{
+        padding: 1rem;
+        h2{
+            font-size: 1.5rem;
+            overflow-wrap: break-word;
+            letter-spacing: -.025em;
+            margin-bottom: .25rem;
+            line-height: 1.375;
+            font-weight: 600;
+            color: #4a4a4a;
+        }
+    }
+    .description{
+        overflow-wrap: break-word;
+        margin-top: .5rem;
+        line-height: 1.25;
+        font-size: 14px;
+    }
+    .reactions{
+        padding: 1em 0 0;
+        display: flow-root;
+        li{
+            display: inline;
+            float: left;
+            vertical-align: middle;
+            button{
+                margin-bottom: .25em;
+                margin-right: .25em;
+                padding: 1px .25rem;
+                background: #FFFFFF;
+                span{
+                    margin-right: 1px;
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+    .comment{
+        padding: 8px 16px;
+        align-items: center;
+        .avatar img{
+            border-radius:50%;
+        }
+        input{
+            width: 100%;
+            border-radius: 20px;
+            height: 32px;
+        }
+    }
+}
+

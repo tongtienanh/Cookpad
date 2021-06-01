@@ -1,0 +1,110 @@
+.wrap-top {
+    padding: 20px 0;
+    display: flex !important;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 300px;
+    &.off{
+        overflow: auto;
+    }
+}
+
+.item-top {
+    background: #f0f2f5;
+    display: block;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    margin-right: 18px;
+    min-width: 260px;
+    max-width: 260px;
+    color: #4b4b4b;
+    padding-bottom: 10px;
+    h2 {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .company {
+        color: $success;
+        text-transform: capitalize;
+    }
+
+    .address {
+        color: #909090 !important;
+    }
+}
+
+.item-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner {
+    width: 100%;
+}
+
+.logo-image {
+    padding: 5px;
+    width: 40%;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    position: absolute;
+    bottom: -30px;
+    box-shadow: 0 0 6px $gray-dark;
+    background-origin: content-box;
+}
+
+.item-head, .item-body, .item-foot {
+    padding: 0 10px;
+    p{
+        //margin-bottom: 2px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .item-top {
+        min-width: 220px;
+        max-width: 220px;
+    }
+    .wrap-top {
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 1140px) {
+    .item-top {
+        background: #f6fbf9;
+        border: 1px solid $border-e5;
+        min-width: 260px;
+        max-width: 260px;
+    }
+    .wrap-top {
+        margin-right: 15px;
+        padding: 0;
+        height: 260px;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo-image {
+        width: 80px;
+        height: 70px;
+        left: 20px;
+    }
+}

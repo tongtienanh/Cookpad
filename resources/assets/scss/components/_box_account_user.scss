@@ -1,0 +1,147 @@
+.box-account-user {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+    .content-box{
+        padding: 20px;
+        background: $white;
+    }
+    .profile-avatar{
+        img {
+            width: 83px;
+            height: 83px;
+            max-width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .profile-fullname {
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        position: relative;
+        color: $color-333;
+    }
+
+    .account-type{
+        color: $color-333;
+    }
+
+    .box-footer{
+        margin: 6px 0 10px 0;
+    }
+
+    .btn-upgrade{
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+        font-weight: 500;
+    }
+    .prev-again{
+        font-size: 14px;
+        color: $color-333;
+    }
+}
+
+#on-off-job-waiting {
+    .job-on-show{
+        display: none;
+        &.show{
+            display: block;
+            strong{
+                font-size: 15px;
+                font-weight: 500;
+                color: $success;
+            }
+        }
+    }
+    .job-waiting-description{
+        font-size: 13px;
+        margin-top: 10px;
+        line-height: 20px;
+        text-align: justify;
+        color: $color-555;
+        margin-bottom: 10px;
+        &.nm {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#text-allow-epl-view-cv{
+    &.success{
+        color: $success;
+    }
+}
+
+.job-waiting-status-text {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 16px;
+    .text-red {
+        color: #d0011b;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+.switch {
+    display: inline-block;
+    height: 26px;
+    position: relative;
+    width: 44px;
+    vertical-align: middle;
+    input {
+        display:none;
+    }
+    .slider {
+        background-color: #ebebeb;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .4s;
+        &:before {
+            background-color: #d0011b;
+            bottom: 4px;
+            content: "";
+            height: 19px;
+            left: 4px;
+            position: absolute;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            width: 19px;
+        }
+        &.round {
+            border-radius: 34px;
+            &:before {
+                border-radius: 50%;
+            }
+        }
+    }
+    input:checked + .slider {
+        background-color: #66bb6a;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(17px);
+        background: $white;
+    }
+}
+
+@media (max-width: 992px) {
+    .box-account-user{
+        display: none;
+    }
+}
+
+
+
+
+
+
+

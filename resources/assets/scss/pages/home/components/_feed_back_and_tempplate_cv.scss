@@ -1,0 +1,29 @@
+.slider-gird {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    height: 50px;
+}
+
+.img-feedback {
+    margin-right: 1rem;
+}
+.image {
+    margin-right: 10px;
+    display: block;
+    position: relative;
+    &.is-64x64 {
+        height: 64px;
+        width: 64px;
+    }
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.is-content {
+    margin: 0.5rem 0;
+    display: flex;
+}

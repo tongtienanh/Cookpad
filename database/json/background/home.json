@@ -1,0 +1,164 @@
+{
+    "category": [
+        {
+            "name" : "Bán hàng",
+            "avatar": "sale.svg"
+        },
+        {
+            "name" : "Kinh doanh",
+            "avatar": "business.svg"
+        },
+        {
+            "name" : "Chăm sóc KH",
+            "avatar": "cham_soc_khach_hang.svg"
+        },
+        {
+            "name" : "Marketing",
+            "avatar": "marketing.svg"
+        },
+        {
+            "name" : "CNTT",
+            "avatar": "developer.svg"
+        },
+        {
+            "name" : "Kế toán",
+            "avatar": "accountant.svg"
+        }
+    ],
+    "employer_brand": [
+        {
+            "name" : "Vnpgroup",
+            "avatar": "https://cdn.123job.vn/123job/uploads/2020/04/27/2020_04_27______68f5a3dea1861fc0a88e4bd590f4ad16.jpg"
+        },
+        {
+            "name" : "Bnc group",
+            "avatar": "https://www.hoteljob.vn/uploads/images/20-04-24-14/Baemin_Vietnamworks_Logo_Baemin_244x100_144.png"
+        },
+        {
+            "name" : "Rabilo group",
+            "avatar": "https://www.hoteljob.vn/uploads/images/15-12-11-08/10127221_144.png"
+        },
+        {
+            "name" : "Khách sạn mường thanh",
+            "avatar": "https://www.hoteljob.vn/uploads/images/20-02-06-16/logo-12_144.png"
+        },
+        {
+            "name" : "Viettel",
+            "avatar": "https://www.hoteljob.vn/uploads/images/19-08-06-08/download_144.png"
+        },
+        {
+            "name" : "Adayroi",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-02-22-09/Screenshot_3_144.jpg"
+        },
+        {
+            "name" : "Vingroup",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-12-08-09/Logo_Full_%C4%91en_144.png"
+        },
+        {
+            "name" : "Công nghệ group",
+            "avatar": "https://www.hoteljob.vn/uploads/images/19-09-26-10/LogoNTTCcolor_144.png"
+        },
+        {
+            "name" : "Thế giới di động",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-04-21-16/palazzo-1_144.png"
+        },
+        {
+            "name" : "Thế giới di động",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-04-21-16/palazzo-1_144.png"
+        },
+        {
+            "name" : "Thế giới di động",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-04-21-16/palazzo-1_144.png"
+        },
+        {
+            "name" : "Thế giới di động",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-04-21-16/palazzo-1_144.png"
+        }
+    ],
+    "job_feature": [
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/20-04-24-14/Baemin_Vietnamworks_Logo_Baemin_244x100_144.png",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"$450 - $700"
+        },
+        {
+            "name": "Nhân viên kinh doanh",
+            "avatar": "https://www.hoteljob.vn/uploads/images/20-01-30-20/84773407_210611413405723_8758927875626762240_n_144.jpg",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"$450 - $700"
+        },
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-04-21-16/palazzo-1_144.png",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"$450 - $700"
+        },
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/19-08-06-08/download_144.png",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"$450 - $700"
+        },
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-02-22-09/Screenshot_3_144.jpg",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"Thương lượng"
+        },
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-12-08-09/Logo_Full_%C4%91en_144.png",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"Thương lượng"
+        },
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/20-02-06-16/logo-12_144.png",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"$450 - $700"
+        },
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/15-12-11-08/10127221_144.png",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"$450 - $700"
+        },
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/15-12-11-08/10127221_144.png",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"Thương lượng"
+        },
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/20-04-24-14/Baemin_Vietnamworks_Logo_Baemin_244x100_144.png",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"$450 - $700"
+        },
+        {
+            "name": "Nhân viên kinh doanh",
+            "avatar": "https://www.hoteljob.vn/uploads/images/20-01-30-20/84773407_210611413405723_8758927875626762240_n_144.jpg",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"$450 - $700"
+        },
+        {
+            "name": "Lập trình viên php",
+            "avatar": "https://www.hoteljob.vn/uploads/images/17-04-21-16/palazzo-1_144.png",
+            "company": "Công Ty Cổ Phần Homesetting",
+            "address": "Hà Nội: Cầu giấy",
+            "salary":"$450 - $700"
+        }
+    ]
+}

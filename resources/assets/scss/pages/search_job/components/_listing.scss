@@ -1,0 +1,525 @@
+#listing {
+    max-width: 100%;
+    padding-right: 5px;
+    .heading {
+        font-size: 0.8125rem;
+        border-bottom: $border-search-inc;
+
+        .tips {
+            display: none;
+        }
+
+        p {
+            padding: 10px 0;
+        }
+
+        span {
+            font-size: 12px;
+            text-align: left;
+            float: left;
+            padding-top: 10px;
+            font-weight: 400;
+            color: $sub-text;
+        }
+    }
+
+    // Paginate
+    .paginate {
+        padding: 1.8rem 1rem;
+        border-bottom: $border-search-inc;
+        text-align: center;
+
+        .btn-more-job {
+            font-size: 1rem;
+            color: $white;
+            font-weight: 500;
+            background: $success;
+            display: inline-block;
+            padding: .875rem 2.5rem;
+        }
+
+        &__list {
+            display: none;
+        }
+    }
+
+    // Recommand job
+    .recommend-job {
+        padding: 10px 0;
+
+        &__title {
+            margin: 0 0 2rem;
+            font-size: 1.1875rem;
+        }
+
+        &__form {
+            label {
+                font-size: 15px;
+                padding-left: 18px;
+                font-weight: bold;
+            }
+
+            input {
+                display: block;
+                width: 100%;
+                margin: 9px 0;
+                padding: 12px;
+                font-size: 15px;
+                border-radius: 100px;
+                border: 2px solid #ececec;
+            }
+
+            button {
+                @include button-primary;
+            }
+        }
+
+        &__caption {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+    }
+
+    // Suggest keyword
+    .related {
+        margin: 15px 0 30px 0;
+        &__title {
+            padding: 9px 0;
+            font-size: 1.1875rem;
+            font-weight: 500;
+        }
+        &__list {
+            margin-top: 2px !important;
+        }
+        strong {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        a {
+            font-size: 13px;
+        }
+        .more {
+            color: $text-light;
+        }
+        .item {
+            margin-bottom: 15px;
+        }
+    }
+
+    // Suggest cv
+    .suggest-cv {
+        padding: 28px 14px;
+        text-align: center;
+
+        &__label {
+            font-size: 15px;
+            margin-bottom: 1rem;
+        }
+
+        .btn-suggest-cv {
+            @include button-primary;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+
+        &__employer {
+            margin-top: 2rem;
+            font-size: 13px;
+        }
+    }
+}
+
+.email-alert {
+    padding: 15px;
+    border: 1px solid $border-e5;
+    border-radius: 5px;
+    margin-top: 30px;
+    .title {
+        margin-bottom: 10px;
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 500;
+        }
+    }
+    #frm-email {
+        input {
+            width: calc(100% - 195px);
+            height: 48px;
+            padding: 0 15px;
+            margin-right: 10px;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+        button {
+            font-size: 15px;
+            font-weight: 600;
+            padding: 13px 22px;
+            vertical-align: middle;
+            width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .secret {
+        margin-top: 15px;
+        p {
+            font-size: 13px;
+            line-height: 1.4;
+        }
+    }
+}
+
+.couter-number {
+    color: $sub-text;
+    text-align: right;
+    font-size: 12px;
+}
+
+#listing {
+    margin: 0;
+    //border-right: $border-search-inc;
+
+    // heading
+    .heading {
+        .tips {
+            display: block;
+            margin-bottom: 0 !important;
+            padding-bottom: 0;
+            font-weight: 500;
+        }
+        .sum {
+            color: $color-555;
+            padding: 8px 0;
+        }
+        .filter-key {
+            margin-bottom: 6px;
+            a {
+                font-size: 0.9rem;
+                background: rgba(235, 235, 235, 0.7);
+                padding: 3px 15px;
+                border-radius: 20px;
+                color: $color-333;
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 8px;
+                margin-bottom: 10px;
+                &:hover {
+                    background: #ebebeb;
+                }
+                i {
+                    color: $white;
+                    background: #888888b3;
+                    border-radius: 50%;
+                    padding: 2px;
+                    font-size: 11px;
+                    margin-left: 8px;
+                    position: relative;
+                    top: -1px;
+                }
+            }
+        }
+        .address-highlights {
+            border: 1px solid #f2f2f2;
+            margin-bottom: 15px;
+            padding: 15px 20px 10px 20px;
+            border-radius: 5px;
+            h4 {
+                padding-bottom: 12px;
+                border-bottom: 1px solid #f2f2f2;
+                font-weight: 500;
+                font-size: 17px;
+            }
+            .list-ah {
+                margin-top: 7px;
+                a {
+                    display: block;
+                    font-size: 0.9rem;
+                    padding: 5px 0;
+                    color: $color-333;
+                    &:hover {
+                        color:  $success;
+                    }
+                }
+            }
+        }
+    }
+
+    // List item
+    .list-item {
+        .item {
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &__wrap {
+                padding-right: 0;
+            }
+
+            &__title {
+                a {
+                    color: $black;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                }
+            }
+
+            &__group-info {
+                margin-bottom: 3px;
+            }
+
+            &__location {
+                color: #909090 !important;
+            }
+
+            &__salary {
+                //background: $white;
+                font-size: 14px;
+                padding: 0;
+                margin-bottom: 3px;
+            }
+
+            &__description {
+                display: block;
+                font-size: 14px;
+                color: #4b4b4b;
+                margin-bottom: 8px;
+                padding-right: 3rem;
+            }
+
+            &__link {
+                span {
+                    display: inline-block;
+                }
+            }
+
+            &__save {
+                color: $success;
+                cursor: pointer;
+            }
+
+            &__more {
+                color: $sub-text;
+                cursor: pointer;
+            }
+
+            &__favorite {
+                display: none !important;
+            }
+
+            &__why-join-us {
+                padding-left: 20px;
+
+                li {
+                    list-style: disc;
+                    font-size: 0.95rem;
+
+                    b {
+                        font-weight: 500 !important;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+    // Box alert item
+    .box-alert-item {
+        display: none;
+        padding: 11px 0;
+        margin-top: 16px;
+        background: #f0f2f5;
+        position: relative;
+        font-size: 0.85rem;
+
+        ul {
+            margin: 0 12px 0 32px;
+        }
+
+        li {
+            list-style: disc;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+
+        span {
+            color: #909090;
+        }
+
+        a {
+            display: inline-block;
+            color: $success;
+            font-size: 0.85rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            color: $sub-text;
+            padding: 0 16px;
+            font-size: 0.85rem;
+        }
+
+        .hide-more {
+            position: absolute;
+            display: block;
+            width: 24px;
+            height: 24px;
+            top: 5px;
+            right: 5px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    // Paginate
+    .paginate {
+        .btn-more-job {
+            display: none;
+        }
+
+        &__list {
+            display: block;
+
+            a {
+                display: inline-block;
+                padding: 8px 15px;
+                font-weight: 400;
+                color: $color-title;
+                border: 1px solid $color-title;
+                margin: 2px;
+                border-radius: 5px;
+            }
+
+            li {
+                display: inline;
+
+                &.active {
+                    a {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    // Related
+    .related {
+        padding: 10px 0;
+        &__title {
+            margin-bottom: 15px;
+            font-size: 17px !important;
+        }
+        h4 {
+            border: none;
+            padding: 0;
+            font-size: 0.9rem;
+
+            &:last-child {
+                border-bottom: none;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+        h4 {
+            &:after {
+                content: ':';
+            }
+        }
+
+        a {
+            line-height: 22px;
+        }
+    }
+
+    // Recommend
+    .recommend-job, .suggest-cv {
+        display: none;
+    }
+}
+
+//Style for desktop
+@media (max-width: 1200px) {
+    #listing {
+        padding-right: 15px;
+    }
+}
+
+//Style for desktop
+@media (min-width: 1140px) {
+    #main {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    #listing {
+        .heading {
+            border-bottom: 1px solid $border-e5;
+            .tips {
+                padding-top: 6px;
+            }
+            .address-highlights {
+                padding: 15px 15px 8px 15px
+            }
+        }
+        .paginate {
+            padding: 15px;
+            .btn-more-job {
+                display: inline-block;
+            }
+            &__list {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .email-alert {
+        #frm-email {
+            input {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #listing {
+        .heading {
+            .filter-key {
+                a {
+                    padding: 8px 10px;
+                    margin-right: 2px;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,55 @@
+#modal-where-booking{
+    max-width: 883px;
+    margin: 0 auto;
+    position: relative;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    box-shadow: 0 0 0 #000;
+    display: none;
+    .modal-header{
+        font-size: 16px;
+        color: #464646;
+        font-weight: 700;
+        background-color: #ebebeb;
+        border: 0;
+        padding-left: 18px;
+        padding-top: 11px;
+        border-radius: 6px 6px 0 0;
+        overflow: hidden;
+        h2{
+            font-size: 16px;
+        }
+
+    }
+    .primary-local{
+        position: relative;
+    }
+    .fa-search{
+        margin: 11px 23px 0 11px;
+        width: 28px;
+        height: 28px;
+        background-position: -428px -335px;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        color: #c6c6c8;
+    }
+    input{
+        width: 100%;
+        padding-left: 35px;
+    }
+    .find-map{
+        padding: 18px 20px 18px 31px;
+        cursor: pointer;
+        .txt-blue{
+            color: #0288d1!important;
+        }
+    }
+}

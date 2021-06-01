@@ -1,0 +1,42 @@
+{
+    "seo": {
+        "title" : "Chào mừng bạn đến với 123work",
+        "description": "Website tìm việc làm",
+        "keyword": ""
+    },
+    "keyword_multi": {
+        "trend": [
+            "bán hàng",
+            "kế toán",
+            "kinh doanh",
+            "lễ tân",
+            "Nhân viên kho",
+            "tuyển dụng",
+            "Kỹ thuật"
+        ],
+        "level": [
+            "Nhân viên ",
+            "Trợ lý, thư ký ",
+            "Giám sát ",
+            "Đào tạo viên",
+            "Nhân viên học việc",
+            "Thực tập sinh",
+            "Trưởng ca ",
+            "Trưởng bộ phận/ Trưởng phòng ",
+            "Tổng giám đốc/ Giám đốc ",
+            "Outlet Manager"
+        ],
+        "exp": [
+
+        ],
+        "type": [
+
+        ],
+        "salary": [
+
+        ],
+        "location": [
+
+        ]
+    }
+}

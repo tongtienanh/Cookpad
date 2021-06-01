@@ -1,0 +1,38 @@
+version: "3"
+services:
+  #PHP Service
+  app123work:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: ${WORK_SERVICE_NAME_APP}
+    restart: unless-stopped
+    user: "www:www"
+    working_dir: /var/www/123work/
+    volumes:
+      - ${WORK_VOLUME_BIND_DATA_APP_SERVICE}:/var/www/123work
+      - ${WORK_VOLUME_CONFIG_APP_SERVICE}:/usr/local/etc/php/conf.d/local.ini
+      - ${WORK_VOLUME_SHARE_STORAGE_APP_SERVICE}:/var/www/123work/storage
+    networks:
+      - 123work
+  #Nginx Service
+  nginx123work:
+    image: nginx:alpine
+    container_name: ${WORK_SERVICE_NAME_NGINX}
+    restart: unless-stopped
+    ports:
+      - ${WORK_EXPOSE_PORT_HTTP_NGNIX_SERVICE}:80
+      - ${WORK_EXPOSE_PORT_HTTPS_NGNIX_SERVICE}:443
+    volumes:
+      - ${WORK_VOLUME_BIND_DATA_NGNIX_SERVICE}:/var/www/123work
+      - ${WORK_VOLUME_CONFIG_NGNIX_SERVICE}:/etc/nginx/conf.d/
+    networks:
+      - 123work
+#Docker Networks
+networks:
+  123work:
+    driver: bridge
+#Volumes
+volumes:
+  dbdata:
+    driver: local

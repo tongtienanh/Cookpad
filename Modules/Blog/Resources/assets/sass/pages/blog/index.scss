@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/course/b_lazy";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+@import "../../../../../../../resources/assets/scss/components/container_blog";
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/paginate";
+@import "../../../../../../../resources/assets/scss/components/blog_newsfeed_item";
+@import "../../../../../../../resources/assets/scss/components/blog_main_news";
+@import "../../../../../../../resources/assets/scss/components/blog_list_counter";
+@import "../../../../../../../resources/assets/scss/components/blog_toolbar";
+@import "../../../../../../../resources/assets/scss/components/blog_nav";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_blog";
+@import "components/news_feed";
+@import "components/newest";
+@import "components/mobile";
+@import "~owl.carousel/dist/assets/owl.carousel.min.css";
+
+@import "components/list_blog";
+.container{
+    max-width: 1110px;
+}
+body{
+    counter-reset: mini-step;
+
+}
+@media(max-width: 1024px)  {
+    .toolbar-wrapper{
+        display: none;
+    }
+    .bottom-header .main-menu{
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .box-home{
+        flex-direction: column;
+    }
+    .list-blog {
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+.banner {
+    background-color: #EDEFF7;
+    padding: 150px 0;
+    background-image: url("/statics/images/banner/nen-tang-chia-se-cv.png");
+    background-size: 44%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+
+    .content {
+        width: 55%;
+        h1 {
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: $success;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 1.7rem;
+            color: $color_333;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .banner {
+        background-image: inherit;
+        padding: 30px 0;
+        .content {
+            width: 100%;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}

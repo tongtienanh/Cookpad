@@ -1,0 +1,69 @@
+.tnow-banner {
+    color: #fff;
+    background: url(https://www.now.vn/app/assets/img/main-banner-tb.jpg) no-repeat 50%;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    padding-top: 50px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .25);
+        z-index: 0;
+    }
+
+    .logo-table {
+        width: 117px;
+        height: 117px;
+        background-image: url(https://www.now.vn/app/assets/img/table-logo.png?47fdd0298de175535f61cd96a5f7adb5);
+        background-size: cover;
+    }
+
+    .block-search {
+        .title-search{
+            font-size: 28px;
+            margin-top: 26px;
+            margin-bottom: 17px;
+            color: #FFFFFF;
+        }
+        .info-contact{
+            padding-top: 18px;
+            span{
+                font-size: 16px;
+                font-weight: 700;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .no-gutters{
+        input{
+            padding: 20px;
+            width: 100%;
+            border-radius: 0;
+        }
+        .btn-find{
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 0;
+            background-color: #f37934;
+            border-color: #f37934;
+            height: 100%;
+            width: 200px;
+            color: #FFFFFF;
+        }
+
+    }
+    .text-right{
+        font-size: 14px;
+    }
+}
+@media(max-width: 678px)  {
+    .tnow-banner{
+        display: none;
+    }
+}

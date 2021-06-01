@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+@import "../../bootstrap/bootstrap";
+@import '../../../../asset_bases/scss/base/form';
+@import '../../../../asset_bases/scss/base/_card';
+
+// Plugin
+@import "../../components/modal/modal_custom";
+@import "../../components/modal/modal_custom_login";
+
+@import "../../components/footer/footer";
+@import "../../components/footer/footer_cockpad";
+@import "components/page_container";
+
+.wrap-header{
+    max-width: 1024px;
+}
+

@@ -1,0 +1,46 @@
+// Recommand job
+.recommend-job {
+    padding: 60px 0;
+
+    &__title {
+        margin: 0 0 2rem;
+        font-size: 1.1875rem;
+    }
+
+    &__form {
+        label {
+            font-size: 15px;
+            padding-left: 18px;
+            font-weight: bold;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin: 9px 0;
+            padding: 12px;
+            font-size: 15px;
+            border-radius: 100px;
+            border: 2px solid #ececec;
+        }
+
+        button {
+            @include button-primary;
+        }
+    }
+
+    &__caption {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 1140px)
+{
+    // Recommend
+    .recommend-job, .suggest-cv {
+        display: none;
+    }
+}

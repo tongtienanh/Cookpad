@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+@import "../../bootstrap/bootstrap";
+
+// Component
+
+// Include
+@import "include/inc_box_intro";
+@import "include/inc_text_image";
+@import "include/inc_box_register";
+
+.section{
+  padding: 50px 0;
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Browse",
+    "alias": "browse",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Browse\\Providers\\BrowseServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

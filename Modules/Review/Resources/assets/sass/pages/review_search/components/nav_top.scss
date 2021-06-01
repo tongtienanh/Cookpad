@@ -1,0 +1,51 @@
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    ul{
+        width: 100%;
+       padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    li {
+        display: inline;
+        padding: 20px;
+        margin-left: 3rem;
+        &:hover span{
+            color: #f60;
+            cursor: pointer;
+        }
+            span {
+                &.active {
+                    color: #f60;
+                }
+                position: relative;
+                font-weight: 700;
+                &::before {
+                    opacity: 0;
+                    visibility: hidden;
+                    content: " ";
+                    position: absolute;
+                    left: 0;
+                    bottom: -12px;
+                    height: 4px;
+                    width: 100%;
+                    background: #f60;
+                }
+            }
+        }
+    }
+@media(max-width: 768px)  {
+    .list-group-menu,.fillter{
+        white-space: nowrap;
+    }
+    .list-group-menu li{
+        margin-left: 0;
+    }
+}

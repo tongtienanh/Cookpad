@@ -1,0 +1,13 @@
+{
+    "name": "Now",
+    "alias": "now",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Now\\Providers\\NowServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

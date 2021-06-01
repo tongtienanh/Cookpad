@@ -1,0 +1,29 @@
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 40%;
+    opacity: .2;
+    img{
+        width: 42px;
+    }
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    left: 0;
+}
+.owl-carousel .owl-nav button.owl-next{
+    right: 0;
+}
+
+.owl-carousel:hover .owl-nav button.owl-next{
+    opacity: 1;
+}
+
+.owl-carousel:hover .owl-nav button.owl-prev{
+    opacity: 1;
+}
+
+.owl-theme .owl-nav button.owl-prev:hover,
+.owl-theme .owl-nav button.owl-next:hover{
+    background: inherit;
+}

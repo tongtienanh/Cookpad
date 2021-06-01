@@ -1,0 +1,13 @@
+.page-auth{
+    margin-top: 0;
+}
+.text-login{
+    font-size: 15px;
+    color: $color-333;
+}
+
+@media (max-width: 440px) {
+    .modal{
+        width: 100%;
+    }
+}

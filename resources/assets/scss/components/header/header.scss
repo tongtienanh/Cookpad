@@ -1,0 +1,253 @@
+@import "./header_attr";
+@import "./menu_header";
+
+.wrap-header {
+     height: 60px;
+     margin: auto;
+     padding: 0 1rem;
+     display: flex;
+     justify-content: space-between;
+    align-items: center;
+    .search-container{
+        width: 40%;
+        position: relative;
+        input{
+            width: 100%;
+        }
+        input:focus{
+            border-color: #52AB42;
+        }
+        i {
+            position: absolute;
+            right: 16px;
+            top: 10px;
+            color: #52AB42;
+            font-size: 20px;
+        }
+    }
+ }
+.header-border-bottom {
+    border-bottom: 1px solid $border-e5 !important;
+}
+
+.prev-page {
+    display: none;
+}
+
+.logo-header {
+    a {
+        font-size: 28px;
+        display: block;
+        color: $success;
+        font-weight: 600;
+        line-height: 60px;
+    }
+}
+
+.mb-menu {
+    display: none;
+}
+
+.header-right-box {
+    display: flex;
+
+    .mb-login {
+        display: none;
+    }
+
+    .change-lang {
+        margin-right: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .dropbtn {
+        color: $sub-text;
+        padding: 6px 0;
+        padding-bottom: 8px;
+        font-size: 0.85rem;
+        border: none;
+        background: #fff;
+    }
+
+    .dropdown {
+        position: absolute;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+
+        img {
+            width: 25px;
+            height: 16px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+}
+
+// Responsive ......................................................................................
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 0 0rem 0 1rem;
+        border-bottom: none;
+        margin-top: 0;
+        box-shadow: none !important;
+        height: 50px;
+        background: $success;
+
+        .wrap-header {
+            margin-top: 0;
+            height: 100%;
+            padding: 5px 0;
+            &.container {
+                max-width: 100%;
+            }
+            .search-container{
+                display: none;
+            }
+        }
+        .prev-page {
+            float: left;
+            line-height: 50px;
+            display: block;
+            i {
+                font-size: 24px;
+                color: $white;
+                display: block;
+                line-height: 40px;
+                margin-left: -4px;
+            }
+        }
+        .logo-header {
+            width: 100%;
+            overflow: hidden;
+            display: block;
+            align-self: center;
+
+            a {
+                display: block;
+                color: $white;
+                text-align: center;
+                margin-left: 26px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .menu-header {
+            display: none;
+        }
+
+        .mb-login {
+            display: none;
+            margin-right: 10px;
+            background: $success;
+            color: $white;
+            font-size: .8125rem;
+            line-height: 24px;
+        }
+
+        .change-lang {
+            display: none;
+        }
+    }
+    .mb-menu {
+        .item {
+            &__favorite {
+                i {
+                    margin-right: 8px;
+                }
+                span {
+                    right: -2px;
+                }
+            }
+        }
+    }
+    .mb-menu {
+        display: flex;
+        color: $white;
+        .item {
+            &__favorite {
+                line-height: 50px;
+                position: relative;
+                height: 30px;
+                i {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 40px;
+                    margin-right: 10px;
+                    color: $white;
+                }
+                span {
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    font-size: 10px;
+                    background: $oranges;
+                    width: 15px;
+                    height: 15px;
+                    line-height: 15px;
+                    border-radius: 50%;
+                    color: $white;
+                    text-align: center;
+                    font-weight: 500;
+                    right: 2px;
+                }
+            }
+        }
+        &__button {
+            min-width: 45px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+
+            svg {
+                fill: $white
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .logo-header {
+        a {
+            font-size: 24px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 0 0rem 0 1rem;
+    }
+}

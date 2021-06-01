@@ -1,0 +1,213 @@
+#tab-job-company{
+    margin-bottom: 30px;
+    .job-over-item {
+        a {
+            img {
+                margin-top: 12px;
+                width: 80px;
+                height: 80px;
+                border-radius: 4px;
+                border: 1px solid #ebebeb;
+                margin-right: 10px;
+            }
+        }
+
+        .text-overflow {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
+            display: block;
+            strong {
+                font-size: 1.15rem;
+                font-weight: 500;
+            }
+        }
+        .item{
+            &__left{
+                width: 20%;
+                padding-left: 5px;
+            }
+            &__right{
+                width: 80%;
+                padding-right: 42px
+            }
+        }
+    }
+    .cpn-job-more {
+        padding: 8px 5px 10px 0;
+        transition: background-color 0.3s;
+        border: 0;
+        border-bottom: 1px solid $border-e5;
+        box-shadow: inherit;
+        margin-bottom: 0;
+        border-radius: inherit;
+        .view-more {
+            text-transform: uppercase;
+            font-weight: 400;
+            margin: 6px 0;
+            font-size: 14px;
+            color: $success;
+            display: block;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+    .job-item{
+        margin-top: 5px;
+        border-bottom: 1px solid $border-e5;
+        position: relative;
+        padding: 8px 0 10px 0;
+        .title {
+            margin-bottom: 3px;
+        }
+        .salary{
+            display: block;
+            color: $oranges;
+        }
+        .company {
+            margin-bottom: 0;
+        }
+        .item {
+            &__favorite {
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                bottom: 13px;
+                right: 10px;
+                z-index: 1;
+                i {
+                    color: $color-555;
+                    display: block;
+                    text-align: center;
+                    font-size: 18px;
+                    height: 100%;
+                    line-height: 24px;
+                    margin-right: 0
+                }
+            }
+            &__hot-top {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 5px;
+                color: $white;
+                background: $oranges;
+                font-size: 13px;
+                padding: 2px 4px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #tab-job-company {
+        .job-item {
+            .item {
+                &__favorite {
+                    right: 5px;
+                }
+                &__left{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #tab-job-company{
+        .job-over-item {
+            .item {
+                &__left {
+                    padding-left: 15px;
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #tab-job-company{
+        .job-over-item {
+            .item{
+                &__left{
+                    width: 18.5%;
+                }
+                &__right{
+                    width: 81.5%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    #tab-job-company{
+        .job-over-item {
+            .item{
+                &__left{
+                    width: 24%;
+                }
+                &__right{
+                    width: 76%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 440px) {
+    #tab-job-company{
+        .job-over-item {
+            a {
+                img {
+                    width: 70px;
+                    height: 70px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    #tab-job-company{
+        .job-over-item {
+            a {
+                img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 12px;
+                }
+
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    #tab-job-company{
+        .job-over-item {
+            a {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 12x;
+                }
+            }
+        }
+    }
+}

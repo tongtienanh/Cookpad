@@ -1,0 +1,16 @@
+.form-search-job {
+    .box-input {
+        input {
+            &.focus {
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+    .input-group {
+        flex: 0 !important;
+        flex-grow: 1 !important;
+    }
+    .input-what {
+        flex-grow: 1.5 !important;
+    }
+}

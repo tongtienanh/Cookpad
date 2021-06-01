@@ -1,0 +1,19 @@
+.feed-back{
+    max-height: 287px;
+    overflow: hidden;
+    &.off {
+        display: flex !important;
+        overflow: auto;
+        .box{
+            width: 333px;
+            margin: 16px 0 16px 16px;
+        }
+    }
+    .box{
+        margin: 15px 10px;
+        box-shadow: 0 0.3em 0.8em -0.125em rgba(0, 0, 0, 0.1), 0 0px 0 1px rgba(0, 0, 0, 0.02);
+        .has-text-weight-bold{
+            font-size: 18px;
+        }
+    }
+}

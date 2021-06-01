@@ -1,0 +1,27 @@
+.resources{
+.container{
+    border-bottom: 1px solid #CECECD;
+    padding: 16px;
+    .text-cookpad{
+        margin-top: 8px;
+        --text-opacity: 1;
+        color: #767676;
+        color: rgba(118,118,118,var(--text-opacity));
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+        ul{
+            li{
+                padding: 4px 0;
+                border: 1px;
+                border-bottom-style:dashed;
+                border-bottom-color: #CECECD;
+                &:last-child{
+                    border-bottom: 0;
+                }
+            }
+        }
+}
+
+}

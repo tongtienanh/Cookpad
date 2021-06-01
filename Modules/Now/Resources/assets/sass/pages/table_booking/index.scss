@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/course/b_lazy";
+@import "../../../../../../../node_modules/flatpickr/dist/flatpickr.min.css";
+@import "../../../../../../../node_modules/flatpickr/dist/themes/material_blue.css";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+@import "../../../../../../../resources/assets/scss/components/container_table";
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_booking";
+@import "../../../../../../../resources/assets/scss/components/card_body";
+@import "components/top_header";
+@import "components/promotion";
+@import "components/detail";
+@import "components/recently_viewed";
+.container-show{
+    display: none;
+}
+.card{
+    border: 1px solid #ebebeb;
+}

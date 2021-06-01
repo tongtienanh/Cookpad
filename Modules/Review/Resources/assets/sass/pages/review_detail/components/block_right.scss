@@ -1,0 +1,112 @@
+.container-ads{
+    width: 100%;
+    >div{
+        width: 100%;
+    }
+    .related-location-wrapper{
+        width: 100%;
+        border: 1px solid #F2F2F2;
+        h2{
+            font-size: 16px;
+            font-weight: 600;
+            border-bottom: 1px solid #F2F2F2;
+            padding: 1.5rem;
+        }
+        .box-right{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: .5rem;
+            padding-top: .5rem;
+            margin-top: 30px;
+    }
+        .place-wrapper{
+            margin-bottom: 1.5rem;
+            width: 100%;
+            .info-wrapper{
+                margin-bottom: .25rem;
+                align-items: center;
+                flex-grow: 1;
+            }
+        }
+        .place-avatar{
+            width: 40px;
+            border-radius: 6px;
+            display: block;
+            place-self: flex-start;
+            div{
+                width: 40px;
+                border-radius: 7px;
+                overflow: hidden;
+                margin-top: -10px;
+            }
+        }
+    }
+    .box-info{
+        color: #000;
+        font-size: 14px;
+        margin-left: 1rem;
+        &:hover h3{
+            color: #ff6600;
+        }
+        h3{
+            font-size: 13px;
+            max-width: 100%;
+            margin-bottom: .25rem;
+            p{
+                font-size: 12px;
+                color: #707070;
+            }
+        }
+        .rating-place{
+            height: 100%;
+            font-size: 14px;
+            i{
+                background-color: #f60;
+                margin-right: 4px;
+                font-size: 10px;
+                border-radius: 5px;
+                color: #fff;
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+                padding-left: 1px;
+                font-size: 14px;
+                line-height: 1;
+            }
+        }
+    }
+}
+.author-wrapper{
+    width: 100%;
+    border-radius: 8px;
+    padding: .25rem .5rem;
+    .author-avatar{
+        width: 50px;
+    }
+    .author-info{
+        margin-left: 1.5rem;
+        flex-grow: 1;
+        .author-name{
+            font-size: 12px;
+            margin-bottom: .25rem;
+            align-items: center;
+        }
+        a{
+            color: #000;
+            font-weight: 700!important;
+        }
+    }
+    .author-summary{
+        font-size: 13px;
+        margin-bottom: .5rem;
+        span{
+            color: #9b9b9b;
+
+        }
+    }
+}
+@media(max-width: 1024px)  {
+    .block-right{
+        display: none;
+    }
+}

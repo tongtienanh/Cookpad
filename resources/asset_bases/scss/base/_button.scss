@@ -1,0 +1,51 @@
+a.btn{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@each $color, $value in $btn-colors {
+  $btn-bg-c: nth($value, 1); //background
+  $btn-co-c: nth($value, 2); //color
+  $btn-bo-c: nth($value, 3); //color-border
+
+  $btn-bg-h: nth($value, 4); //background
+  $btn-co-h: nth($value, 5); //color
+  $btn-bo-h: nth($value, 6); //color-border
+
+  .#{$color} {
+    background: #{$btn-bg-c};
+    color: #{$btn-co-c} !important;
+    border: 2px solid #{$btn-bo-c};
+    &:hover {
+      text-decoration: none;
+      background: #{$btn-bg-h};
+      color: #{$btn-co-h} !important;
+      border: 2px solid #{$btn-bo-h};
+    }
+  }
+}
+@each $color, $value in $btn-color-outlines {
+  $color_main: nth($value, 1); //color-main
+  $color_text: nth($value, 2); //color-text
+
+  .#{$color}-outline {
+    background: $white;
+    color: #{$color_main} !important;
+    border: 2px solid #{$color_main} !important;
+    &:hover {
+      text-decoration: none;
+      background: #{$color_main};
+      color: #{$color_text} !important;
+    }
+  }
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+
+    // Vertically space out multiple block buttons
+    + .btn-block {
+        margin-top: $btn-block-spacing-y;
+    }
+}

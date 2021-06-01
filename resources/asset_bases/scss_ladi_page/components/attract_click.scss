@@ -1,0 +1,47 @@
+.attract-click {
+    background: #27326c; /* fallback for old browsers */
+
+    color: $white;
+    text-align: center;
+
+    &__content {
+        width: 50%;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .attract-click {
+        &__content {
+            width: 100%;
+
+            a.btn {
+                margin-bottom: 10px;
+
+                &:not(:first-of-type) {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .attract-click {
+        &__content {
+            width: 100%;
+
+            a.btn {
+                width: 80%;
+                margin-bottom: 10px;
+
+                &:not(:first-of-type) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

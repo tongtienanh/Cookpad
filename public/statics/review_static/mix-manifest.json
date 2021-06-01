@@ -1,0 +1,17 @@
+{
+    "/js/review.js": "/js/review.js",
+    "/css/review.css": "/css/review.css",
+    "/css/review_profile.css": "/css/review_profile.css",
+    "/css/review_detail.css": "/css/review_detail.css",
+    "/css/review_search.css": "/css/review_search.css",
+    "/css/review_post.css": "/css/review_post.css",
+    "/js/review_detail.js": "/js/review_detail.js",
+    "/js/review_post.js": "/js/review_post.js",
+    "/js/review_profile.js": "/js/review_profile.js",
+    "/js/review_search.js": "/js/review_search.js",
+    "/css/review.min.css": "/css/review.min.css",
+    "/css/review_profile.min.css": "/css/review_profile.min.css",
+    "/css/review_detail.min.css": "/css/review_detail.min.css",
+    "/css/review_search.min.css": "/css/review_search.min.css",
+    "/css/review_post.min.css": "/css/review_post.min.css"
+}

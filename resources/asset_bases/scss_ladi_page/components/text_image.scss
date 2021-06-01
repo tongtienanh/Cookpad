@@ -1,0 +1,87 @@
+.text-image {
+  background: #f4f4f4;;
+  &__content {
+    height: 100%;
+    .item {
+      display: flex;
+      margin-bottom: 30px;
+      &__content {
+        flex: 0 0 50%;
+        h3 {
+          font-size: 20px;
+          margin-bottom: 25px;
+          position: relative;
+          &:before {
+            background: #1a8dff;
+            bottom: -7px;
+            content: '';
+            display: inline-block;
+            height: 2px;
+            left: 0;
+            position: absolute;
+            width: 100px;
+          }
+        }
+        p {
+          margin-bottom: 15px;
+          padding-left: 40px;
+          position: relative;
+          line-height: 28px;
+          &:before {
+            background: url(./../../images/banner/icon-checked.png) no-repeat center;
+            background-size: contain;
+            content: '';
+            display: inline-block;
+            height: 15px;
+            left: 0;
+            margin-right: 15px;
+            position: absolute;
+            top: 5px;
+            width: 25px;
+          }
+        }
+      }
+      img {
+        display: inline-block;
+        flex: 0 0 50%;
+        width: 200px;
+        height: 250px;
+        margin-left: 40px;
+        object-fit: contain;
+      }
+      &:nth-of-type(2n) {
+        .item__content {
+          order: 2;
+        }
+        img {
+          order: 1;
+          margin-left: 0;
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .text-image {
+    .item {
+      flex-wrap: wrap;
+      &__content {
+        flex: 0 0 100%;
+      }
+      img {
+        margin: 0 auto;
+      }
+      &:nth-of-type(2n) {
+        .item__content {
+          order: 1;
+        }
+        img {
+          order: 2;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+}

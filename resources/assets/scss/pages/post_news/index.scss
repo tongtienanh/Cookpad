@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+@import "../../bootstrap/bootstrap";
+@import '../../../../asset_bases/scss/base/form';
+@import '../../../../asset_bases/scss/base/_card';
+
+// Plugin
+@import "../../components/modal/modal_custom";
+@import "../../components/modal/modal_custom_login";
+
+@import "../../components/footer/footer";
+@import "../../components/container";
+@import "../../components/the_count";
+@import "components/about";
+@import "components/resourses";
+@import "components/steps";
+.wrap-header{
+    max-width: 1024px;
+}
+.the-count{
+    visibility: hidden;
+}
+body{
+    counter-reset: mini-step;
+    .btn-post{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin: 0 auto;
+        background: #0caa41;
+        display: flex;
+    }
+}
+input{
+    color: #767676;
+}

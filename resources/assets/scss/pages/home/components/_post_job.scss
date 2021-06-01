@@ -1,0 +1,45 @@
+.post-a-job {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    height: 320px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .text{
+        span {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            color: $white;
+        }
+        h3 {
+            padding: 5px 0;
+            font-size: 2rem;
+            color: $white;
+        }
+    }
+    p {
+        line-height: 1.5;
+        color: $white;
+    }
+    .post-a-job-btn {
+        margin-top: 20px;
+    }
+    .text {
+        color: $white;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-a-job{
+        .col-lg-6{
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+}

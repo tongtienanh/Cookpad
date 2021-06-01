@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+@import "../../../../../../../resources/assets/scss/components/container_table";
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/eat_collections";
+@import "../../../../../../../resources/assets/scss/components/paginate";
+.tbnow-promotion-banner{
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    .breadcrumb{
+        padding-top: 4px;
+        padding-left: 11px;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 100%;
+    }
+}
+.tbnow-title-home{
+    display: none!important;
+}
+.btn-view-more{
+    display: none;
+}
+.card-img::after{
+    display: none;
+}

@@ -1,0 +1,41 @@
+.intro-image {
+  &__content {
+    display: flex;
+    .item {
+      border-radius: 10px;
+      box-shadow: 0 16px 35px 6px rgba(245, 245, 245, 0.74);
+      padding: 25px;
+      text-align: center;
+      width: calc(100% / 3);
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+      img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 10px;
+      }
+      &__title {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      &__des {
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .intro-image {
+    &__content {
+      flex-wrap: wrap;
+      .item {
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

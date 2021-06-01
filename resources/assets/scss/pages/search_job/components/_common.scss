@@ -1,0 +1,56 @@
+@mixin button-primary {
+    width: 100%;
+    margin: 9px 0;
+    padding: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    background: $white;
+    border: 2px solid $main-text;
+    color: $main-text !important;
+}
+
+#main {
+    ul.breadcrumb {
+        margin-bottom: 0;
+    }
+}
+.sticky {
+  position: fixed !important;
+  top: -1px;
+  bottom: -1px;
+  z-index: 999;
+  background: #fff;
+}
+.modal{
+    .modal-header{
+        padding: 15px;
+        .modal-title{
+            color: $white;
+            font-size: 18px;
+        }
+    }
+    a{
+        &.close-modal{
+            top: 12px;
+        }
+    }
+}
+.page-auth{
+    margin-top: 0;
+}
+.text-login{
+    font-size: 15px;
+    color: $color-333;
+}
+
+@media (max-width: 1024px) {
+    #sub-header{
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    .modal{
+        width: 100%;
+    }
+}

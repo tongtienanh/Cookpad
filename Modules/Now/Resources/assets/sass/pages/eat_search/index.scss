@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+@import "../../../../../../../resources/assets/scss/components/container_table";
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/course/owl_course";
+@import "../../../../../../../resources/assets/scss/components/card_body";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/tbnow-header";
+@import "../../../../../../../resources/assets/scss/components/paginate";
+@import "components/fillter";
+.show{
+    background-color: #fff;
+    font-weight: 700;
+}
+@media(max-width: 1200px)  {
+    .container-show{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        .col-3{
+            max-width: 100%;
+            margin-right: 10px;
+        }
+    }
+}

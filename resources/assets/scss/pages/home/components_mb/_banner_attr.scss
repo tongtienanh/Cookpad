@@ -1,0 +1,181 @@
+@media (max-width: 1200px) {
+    .banner-home {
+        .intro{
+            h1 {
+                font-size: 34px;
+            }
+            .des-intro{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner-home {
+        .logo-box {
+            display: none;
+        }
+        .wrap-form {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 0
+        }
+    }
+}
+
+@media (min-width: 996px) {
+    .banner-home{
+        .form-search-job {
+            .input-group {
+                display: block !important;
+                min-height: 36px;
+            }
+
+            .input-what {
+                flex: 1 1;
+            }
+
+            .input-where {
+                flex: 0 0 35.3%;
+            }
+
+            .button-search {
+                button {
+                    height: 100%;
+                    min-height: 36px;
+                    font-size: 0.9rem;
+                }
+            }
+
+            .text-input {
+                min-height: 39px;
+
+                &__title {
+                    font-size: 13px;
+                }
+
+                &__des {
+                    font-size: 10px;
+                }
+            }
+
+            .advance-search {
+                display: block;
+                align-self: flex-end;
+                padding: 11px 15px;
+                min-height: 36px;
+                font-size: 12px;
+                color: $sub-text;
+            }
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    .banner-home {
+        padding: 0.5rem 0;
+        .wrap-form {
+            display: none;
+        }
+        .filter-mb{
+            text-align: center;
+            display: block;
+            span {
+                background: $success;
+                color: $white;
+                border: 2px solid transparent;
+                font-size: 1rem;
+                padding: .7rem 2.5rem;
+                border-radius: 50px;
+                cursor: pointer;
+                display: inline-block;
+                font-weight: 500;
+                letter-spacing: .3px;
+                line-height: 20px;
+                text-align: center;
+                transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                vertical-align: middle;
+                text-transform: uppercase;
+                white-space: nowrap;
+                margin: 15px 0 30px 0;
+            }
+        }
+        .intro {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            h1 {
+                font-size: 32px;
+            }
+            .des-intro{
+                font-size: 22px;
+            }
+            .content{
+                width: 100%;
+            }
+            .image {
+                width: 64%;
+                margin: 0 auto 20px auto;
+            }
+            .btn-cv {
+                display: none;
+                margin-bottom: 15px;
+            }
+        }
+        .tag-list{
+            display: none;
+        }
+        .image {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-home {
+        .intro {
+            h1 {
+                font-size: 26px;
+            }
+            .des-intro{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .banner-home {
+        .intro {
+            h1 {
+                font-size: 20px;
+            }
+            .des-intro{
+                font-size: 16px;
+                margin-top: 10px !important;
+            }
+            .work-connection{
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 397px) {
+    .banner-home {
+        .intro {
+            .btn-cv{
+                .mr-2{
+                    margin-right: 5px !important;
+                    margin-left: 5px;
+                }
+                .mb-4{
+                    margin-bottom: 10px !important;
+                }
+            }
+        }
+    }
+}

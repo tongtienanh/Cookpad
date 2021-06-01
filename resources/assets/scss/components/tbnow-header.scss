@@ -1,0 +1,49 @@
+.tbnow-header {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+    margin-bottom: 2px;
+    h2{
+        margin-left: -5px;
+        margin-right: 117px;
+        font-size: 21px;
+        color: #525252;
+        text-transform: uppercase;
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+    }
+}
+.tbnow-type {
+    .item-type {
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 0;
+        position: relative;
+        padding: 1px 21px;
+    }
+
+    .active {
+        color: #f37934;
+        font-weight: 700;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -23px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 10px solid #f37934;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+#modal-create_collection{
+    margin: 0 auto;
+    .modal-body{
+        background: #F8F6F2;
+        position: relative;
+        input, textarea{
+            width: 100%;
+        }
+        input{
+            margin-bottom: 6px;
+        }
+    }
+}

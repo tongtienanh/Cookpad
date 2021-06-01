@@ -1,0 +1,173 @@
+@media only screen and (max-width: 1199px) {
+    .col-2.item-col {
+        max-width: 233px;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    .col-2.item-col {
+        max-width: 230px;
+    }
+    .col-4.item-col {
+        max-width: 345px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .item-col {
+        margin-bottom: 0 !important;
+    }
+    .col-2.item-col {
+        max-width: 50%;
+        margin-bottom: 10px !important;
+    }
+    .col-4.item-col {
+        max-width: 100%;
+    }
+    .section-background {
+        background-color: #fff;
+        .item {
+            max-width: 100%;
+        }
+    }
+
+    .section {
+        padding: 30px 0 10px 0;
+
+        .item-hot {
+            position: relative;
+        }
+
+        .item-customer {
+            margin-bottom: 10px;
+        }
+
+        .item-product{
+            padding-bottom:10px;
+            padding-top: 0;
+            border: none !important;
+            border-bottom: 1px solid $border-e5 !important;
+            border-radius: 0;
+            margin-bottom: 0;
+            h3 {
+                font-size: 1.15rem;
+                margin-bottom: 3px;
+                color: $dark;
+                width: 100%;
+                padding-right: 40px;
+            }
+            .img {
+                margin-left: 0;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 15px;
+                }
+            }
+            .from,
+            .address,
+            .money {
+                color: $color-333;
+                margin-bottom: 0;
+                font-size: 15px;
+            }
+            .address {
+                margin: 5px 0;
+            }
+            .money {
+                padding: 0 8px 4px 0;
+                display: inline-block;
+                line-height: 1.125rem;
+                border-radius: 2px;
+                min-width: 100px;
+                color: $oranges
+            }
+        }
+
+        .item {
+            &__favorite {
+                display: block !important;
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                right: 15px;
+                bottom: 4px;
+
+                i {
+                    color: $color-555;
+                    display: block;
+                    text-align: center;
+                    font-size: 18px
+                }
+            }
+
+            &__hot-top {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 18px;
+                color: #fff;
+                background: $oranges;
+                font-size: 13px;
+                padding: 2px 4px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 440px) {
+    .section {
+        .item-product {
+            .img {
+                img {
+                    width: 70px;
+                    height: 70px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .section {
+        .item-product {
+            .img {
+                img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .section {
+        .item-product {
+            .img {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                    border: 1px solid #ebebeb;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    .col-2.item-col {
+        max-width: 100%;
+    }
+}

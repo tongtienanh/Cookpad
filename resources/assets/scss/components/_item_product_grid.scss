@@ -1,0 +1,131 @@
+// Style item product format grid
+.section {
+    padding-top: 50px;
+    .item-col {
+        padding-right: 0;
+        flex-basis: 200px;
+        margin-bottom: 15px;
+    }
+    .col-4.item-col {
+        flex-basis: 300px;
+    }
+    .section-head {
+        position: relative;
+    }
+    .view-more {
+        position: absolute;
+        right: 15px;
+        top: 48px;
+        color: $color-333;
+        font-size: 14px;
+        &:hover{
+            text-decoration: underline;
+        }
+        img{
+            width: 10px;
+        }
+    }
+}
+.section-head-title {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.section-head-des {
+    font-size: 1rem;
+}
+.img {
+    background: $white;
+}
+.section-background {
+    background-color: #fff;
+    .item {
+        border:1px solid $border-e5;
+        background: $white;
+        &__hot-top {
+            display: none;
+        }
+    }
+}
+
+
+.item-customer {
+    width: 100%;
+    background: #fff;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    img {
+        width: 144px;
+        height: 70px;
+        text-align: center;
+        -o-object-fit: contain;
+        object-fit: contain;
+        margin-top: 10px;
+    }
+    .name {
+        padding: 5px 0 15px;
+        background: #fff;
+        color: $dark;
+    }
+}
+
+.item-product {
+    display: flex;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px 0;
+    //margin-bottom: 15px;
+    h3 {
+        font-weight: 500;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 98%;
+        font-size: 1.05rem;
+        color: $color-333;
+    }
+    .img{
+        width: 20%;
+        margin-right: 10px;
+        margin-left: 5px;
+        height: 60px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .info {
+        color: #484848;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        overflow: hidden;
+        p{
+            line-height: 20px;
+        }
+        .top {
+            color: $danger;
+        }
+    }
+    .from {
+        color: $color-333;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 10px;
+    }
+
+    .money {
+        color: $oranges
+    }
+}
+.item__favorite {
+    display: none !important;
+}

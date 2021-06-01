@@ -1,0 +1,50 @@
+.box-statistic{
+  text-align: center;
+  .statistic{
+    display: flex;
+    flex-wrap: wrap;
+    .item{
+      width: calc(100% / 4);
+      max-width: calc(100% / 4);
+      padding: 0 30px;
+      flex: 1 1 100%;
+      text-align: center;
+      .number{
+        color: $success;
+        font-size: 50px;
+        font-weight: 500;
+      }
+      p{
+        font-size: 15px;
+        color: $color-333;
+        line-height: 27px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media (max-width: 991px){
+  .box-statistic {
+    .statistic {
+      .item{
+        width: calc(100% / 2);
+        max-width: calc(100% / 2);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px){
+  .box-statistic{
+    h2{
+      font-size: 32px;
+    }
+    .statistic {
+      .item{
+        .number{
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

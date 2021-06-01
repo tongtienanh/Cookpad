@@ -1,0 +1,41 @@
+.box-about {
+    .content {
+        .item{
+            display: flex;
+            align-items: center;
+            .item-about{
+                display: inline-block;
+                flex: 1 1 50%;
+            }
+            .box-image{
+                flex: 1 1 50%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .box-about {
+        .title-about{
+            margin-bottom: 0;
+        }
+        .content {
+            .item {
+                display: -webkit-box;
+                display: -moz-box;
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                box-orient: vertical;
+                .item-about{
+                    display: block;
+                    -webkit-box-ordinal-group: 2;
+                    -moz-box-ordinal-group: 2;
+                    box-ordinal-group: 2;
+                }
+            }
+        }
+    }
+}

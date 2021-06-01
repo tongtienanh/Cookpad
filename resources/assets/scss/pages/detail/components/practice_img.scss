@@ -1,0 +1,78 @@
+.practice_img{
+    .container{
+        border-bottom: 1px solid $color-cecece ;
+        --border-opacity: 1;
+        padding:16px 0 16px;
+        p{
+            padding-top: 16px;
+            color: #4a4a4a;
+            font-size: 16px;
+        }
+        .item-start{
+            //display: flex;
+            //border-radius: 0.5rem;
+            //border: 1px solid #ecebe9;
+            //height: 200px;
+            a{
+                height: 100%;
+            }
+            li{
+                width: 10rem;
+                padding: .5rem;
+                margin-right: .5rem;
+                img{
+                    border-radius: 5px;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+            }
+            .picture-practive{
+                .pic{
+                    width: 10rem;
+                    padding: .5rem;
+                    margin-right: .5rem;
+                    font-size: .875rem;
+                    flex-shrink: 0;
+                    border-radius: .5rem;
+                    border: 1px  solid rgb(236, 235, 233);
+                    cursor: pointer;
+                    a img{
+                        height: 8rem;
+                    }
+                    .author-practive{
+                        padding-top: .5rem;
+                        padding-bottom: .5rem;
+                        padding-left: .25rem;
+                        padding-right: .25rem;
+                    }
+                }
+            }
+        }
+        .controller{
+            .btn-primary{
+                //margin-top: 8px;
+                margin: 16px 0;
+                margin-bottom: 0;
+                background: #4a4a4a;
+                color: #FFFFFF;
+            }
+        }
+        a{
+            text-decoration: underline;
+            color:#4a4a4a ;
+            font-size: .875rem;
+            text-align: center;
+            display: block;
+        }
+
+    }
+}
+@media (max-width: 1024px){
+    .practice_img{
+        .container{
+            padding: 8px!important;
+        }
+    }
+}

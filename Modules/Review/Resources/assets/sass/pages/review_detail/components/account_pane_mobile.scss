@@ -1,0 +1,46 @@
+.account-panel-mobile{
+    margin-top: 15px;
+    display: none;
+    max-width: 100%;
+    justify-content: space-between;
+    .group img{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+
+    }
+    .author{
+        margin-left: 1rem;
+        h3{
+            font-size: 16px;
+        }
+        small{
+            background: #ffc317;
+            color: #fff;
+            padding: 2px 6px;
+            border-radius: 36px;
+            font-size: 9px;
+        }
+        span{
+            color: #9b9b9b;
+            font-size: 14px;
+        }
+    }
+    button{
+        color: #fff;
+        background: #f60;
+        border: 1px solid #f60;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width: 768px)  {
+    .account-panel-mobile{
+        display: flex;
+    }
+
+}

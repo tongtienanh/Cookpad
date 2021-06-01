@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+@import "../../bootstrap/bootstrap";
+@import "../../components/header_search";
+@import "../../components/job/listing_item_job";
+@import "../../components/custom_owl";
+@import "../../components/sub_header";
+@import "../../components/modal/modal_custom";
+@import "../../components/modal/modal_search_fillter";
+@import "../../components/modal/modal_custom_login";
+@import "../../components/nav_bottom";
+@import "../../components/scroll_custom";
+@import "../../components/form_search_detail";
+@import '../../../../asset_bases/scss/base/_form';
+@import '../../../../asset_bases/scss/base/_card';
+@import "../../components/breadcrumb";
+
+// Common
+@import "./components/_common";
+@import "./components/_aside_left";
+@import "./components/_item_top";
+@import "./components/_listing";
+@import "./components/_content";
+@import "./components/_no_result";

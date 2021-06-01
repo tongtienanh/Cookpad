@@ -1,0 +1,33 @@
+.top-header{
+    padding: 16px 0;
+    h1{
+        font-size: 28px;
+        color: #4a4a4a;
+        font-weight: 400;
+        span{
+            color: #939290;
+            font-size: 20px;
+            margin-right: 8px;
+        }
+    }
+    ul{
+        padding: 8px 0;
+        display: flex;
+        li{
+            border-radius: .25rem;
+            text-transform: none;
+            border: 1px solid #CECECD;
+            background: #FFFFFF;
+            text-align: center;
+            cursor: pointer;
+            margin-right: 8px;
+            margin-bottom: 8px;
+
+            a{
+                padding: 0 8px;
+                font-size: 14px;
+                color: #767676;
+            }
+        }
+    }
+}

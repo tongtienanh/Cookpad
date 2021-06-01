@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+@import "../../bootstrap/bootstrap";
+@import '../../../../asset_bases/scss/base/form';
+@import '../../../../asset_bases/scss/base/_card';
+
+// Plugin
+@import "../../components/modal/modal_custom";
+@import "../../components/modal/modal_custom_login";
+
+// Component widget on page
+@import "../../components/course/b_lazy";
+@import "../../components/footer/footer";
+@import '../../components/item_product_grid';
+@import '../../components/item_product_grid_mb';
+@import '../../components/suggest_link';
+@import "../../components/custom_owl";
+@import "../../components/nav_bottom";
+@import "../../components/filter/inc_suggestion";
+@import "../../components/header_search";
+@import "../../components/scroll_custom";
+@import "../../components/list_item";
+@import "../../components/_home_categories";
+@import "../../components/_home_season_collect";
+@import "../../components/new_friend";
+@import "../../components/latest_cooksnaps_collection";
+
+@import "./components/_banner_attr";
+@import "./components/_form_search";
+@import "./components/_link_suggest";
+@import "./components/_recent_search";
+@import "./components/contents";
+@import "./components/section_background";
+@import "./components/post_job";
+//@import "./components/box_vote_link";
+//@import "./components/box_talks_about_us";
+@import "./components/why_us";
+@import "./components/feed_back";
+@import "./components/feed_back_and_tempplate_cv";
+@import "./components/template_cv";
+@import "./components/template_cv_plan";
+@import "./components/prod_vip";
+@import "./components/category";
+@import "./components/enterprise";
+@import "./components/common";
+
+
+// Component banner mobile
+@import "./components_mb/_banner_attr";
+//.container {
+//    max-width: 1170px;
+//}
+

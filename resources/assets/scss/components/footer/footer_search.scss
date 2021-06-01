@@ -1,0 +1,28 @@
+.footer {
+  //padding: 1rem 24px;
+  &__nav {
+    display: block;
+    font-size: 11px;
+    &--left, &--right {
+      flex: 0 0 50%;
+      margin-bottom: 8px;
+    }
+  }
+  .menu-footer {
+    li {
+      display: inline;
+      font-size: .75rem;
+      &:after {
+        content: " - ";
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+    a {
+      color: #333;
+    }
+  }
+}

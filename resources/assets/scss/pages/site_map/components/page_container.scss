@@ -1,0 +1,93 @@
+.page-container {
+    .container {
+        max-width: 1020px;
+        padding: 0;
+
+        h2 {
+            padding: 32px 0;
+            color: #4a4a4a;
+            font-weight: 500;
+        }
+
+        .box {
+            padding: 0;
+        }
+
+        .block {
+            padding: 16px;
+
+            h3 {
+                padding-top: 16px;
+                color: #4a4a4a;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            &:hover {
+                cursor: pointer;
+            }
+
+            a {
+                color: #767676;
+                font-size: 16px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            display: flex;
+            flex-direction: column;
+            width: 328px;
+            height: 360px;
+            margin: 8px 0;
+            padding: 8px;
+            img {
+                margin-top: 8px;
+                width: 312px;
+                height: 224px;
+                object-fit: cover;
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+                border-radius: 6px;
+            }
+
+            ul {
+                padding-left: 0;
+                box-sizing: border-box;
+                list-style-type: disc;
+                -webkit-margin-before: 1em;
+                margin-block-start: 1em;
+                -webkit-margin-after: 1em;
+                margin-block-end: 1em;
+                -webkit-margin-start: 0;
+                margin-inline-start: 0;
+                -webkit-margin-end: 0;
+                margin-inline-end: 0;
+                margin-top: 16px;
+                margin-bottom: 0;
+
+                li {
+                    display: inline-block;
+                    font-size: 14px;
+
+                    a {
+                        text-decoration: underline;
+                        padding-right: 8px;
+                        font-size: 16px;
+                        color: #939290;
+
+                        &:hover {
+                            color: #767676;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

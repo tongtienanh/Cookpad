@@ -1,0 +1,314 @@
+.content {
+    &__title {
+        line-height: 1.22;
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    &__info {
+        font-size: 14px;
+        line-height: 1.5;
+
+    }
+
+    .company-info-basic {
+        .star-review {
+            display: none;
+        }
+    }
+
+    .box-detail {
+        .meta-info {
+            margin: 10px 0 16px 0;
+        }
+
+        &__benefit {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .text {
+            font-size: 15px;
+        }
+
+        &__benefit:nth-child(1) .icon {
+            background: url("../../images/icon/location.svg") no-repeat center;
+        }
+
+        &__benefit:nth-child(2) .icon {
+            background: url("../../images/icon/career.svg") no-repeat center;
+        }
+
+        &__benefit:nth-child(3) .icon {
+            background: url("../../images/icon/dolla.svg") no-repeat center;
+        }
+    }
+
+    &__box {
+        margin-bottom: 20px;
+
+        p, li {
+            color: #484848;
+            line-height: 1.5rem;
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        p, li {
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin-left: 20px;
+            list-style: none;
+
+            li {
+                list-style: disc;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+
+        b {
+            font-weight: 500;
+        }
+    }
+
+    .content-body {
+        margin-top: 15px;
+    }
+
+    .meta-info {
+        font-size: 12px;
+    }
+
+    .btn {
+        color: $black;
+        margin: 5px auto;
+        display: block;
+    }
+
+    .btn-apply-detail {
+        a {
+            margin: 5px 0;
+            font-weight: 500;
+
+            &:nth-child(1) {
+                margin-right: 15px;
+                text-transform: uppercase;
+            }
+
+            &:nth-child(2) {
+                color: $success;
+
+                i {
+                    font-weight: bold;
+                    color: $success;
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
+
+    .group-button {
+        padding: 2rem 0;
+
+        .btn-save {
+            background: #fff !important;
+            color: $main-text !important;
+        }
+    }
+
+    .job-relate {
+        display: none;
+    }
+
+    &__company-name {
+        display: none;
+    }
+
+    .btn-apply-desk {
+        display: none;
+    }
+}
+
+.list-item-job, #form-search-job, #header-detail {
+    display: none;
+}
+
+#info-company {
+    .info {
+        display: none;
+
+        > div {
+            margin-bottom: 12px;
+            display: flex;
+        }
+
+        img {
+            width: 13px;
+            vertical-align: text-top;
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        span {
+            font-size: 14px;
+            color: $color-333;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    #main {
+        .content {
+            width: 70%;
+
+            &__info-head {
+                padding-bottom: 15px;
+                border-bottom: 2px solid #f6f6f6
+            }
+
+            .company-info-basic {
+                display: flex;
+                margin-bottom: 12px;
+
+                .star-review {
+                    display: flex;
+                }
+            }
+
+            &__company-name {
+                display: block;
+                margin-right: 10px;
+                font-size: 14px;
+            }
+
+            .btn-apply-desk {
+                display: block;
+                padding: 10px 30px;
+                height: 3rem;
+                max-width: 20rem;
+            }
+        }
+    }
+    .group-button {
+        display: none;
+    }
+    .job-relate {
+        display: block !important;
+        margin-top: 2rem;
+        border-top: 2px solid #ccc;
+        padding-top: 1rem;
+        color: #484848;
+        font-size: .875rem;
+
+        a {
+            display: block;
+            margin-bottom: 15px;
+            color: #484848;
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    #tab-mobile {
+        display: flex;
+    }
+    .company-info__logo {
+        .avatar {
+            margin: auto;
+            display: block;
+            width: 130px;
+            height: 70px;
+            object-fit: cover;
+            border: 1px solid $border-e5;
+            border-radius: 5px;
+        }
+    }
+    .company-info__button {
+        display: none;
+    }
+    .company-info__content {
+        padding: 15px 0;
+        border-bottom: 1px solid $border-e5;
+        .cpn-name {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: $color-333;
+            margin-bottom: 15px;
+        }
+
+        .cpn-description {
+            line-height: 24px;
+            font-size: 15px;
+            color: $color-333;
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .list-item-job {
+        display: block;
+    }
+    #info-company {
+        .info {
+            display: block;
+        }
+    }
+    #header-detail {
+        display: block;
+    }
+
+    #header-default {
+        display: none;
+    }
+
+    .btn-apply-detail {
+        display: none;
+    }
+
+    .content {
+        &__title {
+            line-height: 30px;
+            font-size: 20px;
+            margin-bottom: .5rem;
+        }
+
+        &__box {
+            h2 {
+                font-size: 18px;
+            }
+
+            p, li {
+                font-size: 15px;
+            }
+        }
+    }
+    .btn-as-mobile {
+        display: block;
+    }
+
+    .scroll-top {
+        bottom: 70px;;
+    }
+}

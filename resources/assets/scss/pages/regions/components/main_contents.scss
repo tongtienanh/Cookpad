@@ -1,0 +1,21 @@
+.main-content{
+    h1{
+        margin: 1em 0;
+        color: #4a4a4a;
+        font-size: 2em;
+        font-weight: 600;
+    }
+    h5{
+        font-size: 14px;
+        color: #4a4a4a;
+
+    }
+    li{
+        padding: 8px 4px 0;
+        a{
+           &:hover{
+               text-decoration: underline;
+           }
+        }
+    }
+}

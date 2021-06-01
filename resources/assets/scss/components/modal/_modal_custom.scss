@@ -1,0 +1,136 @@
+@import "~jquery-modal/jquery.modal.min.css";
+
+.modal {
+    padding: 0;
+    border-radius: 10px;
+    &-header {
+        padding: 15px;
+        border-bottom: 1px solid #e5e5e5;
+        .title {
+            font-size: 18px;
+            margin: 13px 0;
+        }
+    }
+    &-header {
+        padding: 6px 15px;
+        background: $success;
+        color: $white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .modal-title {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    &-body {
+        position: relative;
+        padding: 15px;
+        p {
+            margin: 0 0 10px;
+        }
+    }
+    &-footer {
+        padding: 10px 15px;
+        text-align: right;
+        border-top: 1px solid #e5e5e5;
+    }
+    a {
+        color: $success;
+    }
+    a.close-modal {
+        font-size: 18px;
+        top: -15px;
+        right: -15px;
+    }
+}
+
+.modal-form {
+    &--small {
+        max-width: 400px;
+    }
+    &__intro {
+        color: #6f6f6f;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    &__button {
+        margin-top: 10px;
+    }
+    .form-group {
+        label {
+            position: relative;
+            .icon-action {
+                cursor: pointer;
+                float: right;
+                font-weight: 400;
+                color: #333;
+            }
+        }
+        &--star {
+            height: 40px;
+            margin-bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            > label {
+                &.error {
+                    color: #ca0e00;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin-top: 0;
+                    line-height: 22px;
+                }
+            }
+            .star {
+                position: relative;
+                i {
+                    cursor: pointer;
+                }
+                .rating-text {
+                    font-size: 13px;
+                    margin-top: -5px;
+                }
+            }
+        }
+        input, select, textarea {
+            border: 2px solid #f2f2f2 !important;
+            border-radius: 0 !important;
+            font-size: 14px;
+            padding: 8px;
+            width: 100%;
+            line-height: 22px;
+        }
+        input[type=radio] {
+            width: auto;
+        }
+        input[type=file] {
+            border: 0 !important;
+            display: block;
+            font-size: 12px;
+            padding: 0;
+            &:focus {
+                box-shadow: none !important;
+            }
+            &::-webkit-file-upload-button {
+                background: #fff;
+                border: 2px solid #f4f4f4;
+                border-radius: 50px;
+                color: #f4f4f4;
+                cursor: pointer;
+                padding: 8px 10px;
+            }
+        }
+    }
+}
+
+
+.modal{
+    a.close-modal{
+        background-image: url("../../../statics/images/icon/close_white.svg");
+        font-size: 18px;
+        top: -28px;
+        right: -1px;
+        background-size: 15px;
+    }
+}

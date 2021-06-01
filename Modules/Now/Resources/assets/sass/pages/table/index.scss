@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/course/b_lazy";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_where_booking";
+
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/course/owl_course";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/container_table";
+@import "../../../../../../../resources/assets/scss/components/box_now";
+@import "../../../../../../../resources/assets/scss/components/card_body";
+@import "../../../../../../../resources/assets/scss/components/btn_view_more";
+@import "../../../../../../../resources/assets/scss/components/tbnow-header";
+@import "../../../../../../../resources/assets/scss/components/eat_collections";
+@import "../../components/mobile_search_top";
+@import "components/search_form";
+@import "components/top_offer";
+@import "components/collection";
+@import "components/place";
+@import "components/posts";
+body{
+    background-color: #f2f2f2;
+}
+.container-show{
+    display: none;
+}
+.view-all{
+    font-size: 16px;
+    color: #0288d1;
+    text-transform: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.active{
+    color: #f37934;
+    font-weight: 700;
+}

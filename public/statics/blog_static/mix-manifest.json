@@ -1,0 +1,10 @@
+{
+    "/js/blog.js": "/js/blog.js",
+    "/css/blog.css": "/css/blog.css",
+    "/css/blog_detail.css": "/css/blog_detail.css",
+    "/css/blog_job_search.css": "/css/blog_job_search.css",
+    "/js/blog_detail.js": "/js/blog_detail.js",
+    "/css/blog.min.css": "/css/blog.min.css",
+    "/css/blog_detail.min.css": "/css/blog_detail.min.css",
+    "/css/blog_job_search.min.css": "/css/blog_job_search.min.css"
+}

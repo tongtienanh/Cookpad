@@ -1,0 +1,270 @@
+.label-title{
+    min-width: 69px;
+    font-weight: 700;
+    font-size: 14px;
+    align-self: center;
+    flex-shrink: 1;
+    padding: .5rem;
+}
+.input-box{
+    width: 100%;
+    padding: .5rem;
+    input{
+        width: 100%;
+        font-weight: 500;
+        color: #1a1a1a;
+        font-size: 13px;
+        background: transparent;
+        border: unset;
+        box-shadow: unset;
+        font-family: Helvetica;
+    }
+}
+.body-review{
+    width: 100%;
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 13px;
+    margin-left: .5rem;
+    background: transparent;
+    border: unset;
+    box-shadow: unset;
+    font-family: Helvetica;
+
+}
+.list-medias{
+
+}
+.switch-text{
+    padding-bottom: 5px;
+    color: #80b2ec;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.multiselect{
+    box-sizing: content-box;
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    text-align: left;
+    color: #35495e;
+    font-family: inherit;
+    font-size: 16px;
+    touch-action: manipulation;
+    .multiselect__tags{
+        border: none;
+        min-height: 40px;
+        display: block;
+        padding: 8px 40px 0 8px;
+        border-radius: 5px;
+        background: #fff;
+        font-size: 14px;
+        .multiselect__tags-wrap{
+            display: none;
+        }
+        input{
+            width: 100%;
+        }
+        .multiselect__placeholder{
+            display: none;
+            color: #adadad;
+            margin-bottom: 10px;
+            padding-top: 2px;
+        }
+
+    }
+    .multiselect__content-wrapper{
+        bottom: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom: none;
+        border-top: 1px solid #e8e8e8;
+        position: absolute;
+        display: block;
+        background: #fff;
+        width: 100%;
+        overflow: auto;
+        border: 1px solid #e8e8e8;
+        z-index: 50;
+        .multiselect__option{
+            display: block;
+            padding: 12px;
+            min-height: 40px;
+            line-height: 16px;
+            text-decoration: none;
+            text-transform: none;
+            vertical-align: middle;
+            position: relative;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+    }
+    .multiselect__input, .multiselect__single{
+        display: inline-block;
+        min-height: 20px;
+        line-height: 20px;
+        border: none;
+        border-radius: 5px;
+        background: #fff;
+        padding: 0 0 0 5px;
+        width: 100%;
+        -webkit-transition: border .1s ease;
+        transition: border .1s ease;
+        box-sizing: border-box;
+        margin-bottom: 8px;
+        vertical-align: top;
+    }
+}
+.service-info{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .service-item{
+        width: 50%;
+        cursor: pointer;
+        padding: .5rem 0 .5rem 3rem;
+        margin-right: .5rem;
+        align-items: center;
+        border-radius: .3rem;
+        .image-item{
+            background: #e4f8ff;
+            padding: 13px;
+            border-radius: 50%;
+        }
+        b{
+            font-size: 13px;
+            text-align: center;
+            flex-grow: 1;
+            font-weight: bolder;
+        }
+
+        .video-item{
+            background: #fff2ee;
+            padding: 13px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    .split-item{
+        color: #f2f2f2;
+    }
+}
+.place-info div{
+    font-size: 13px;
+    color: #666;
+}
+.info-wrapper{
+    border-radius: 8px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    align-items: center;
+    flex-grow: 1!important;
+    &:last-child{
+        border-bottom: unset;
+    }
+    .place-avatar{
+        min-width: 60px;
+        max-width: 60px;
+        width: 60px;
+        border-radius: 6px;
+        overflow: hidden;
+        .thumbnail-wrapper{
+            padding-top: 100%;
+            background-color: transparent;
+            width: 100%;
+            position: relative;
+            align-items: center!important;
+            justify-content: center!important;
+            img{
+                object-fit: cover;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: block;
+                margin: 0 auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+    .box-info{
+        color: #000;
+        font-size: 14px;
+        width: 100%;
+        margin-left: .5rem;
+        .title{
+            font-size: 13px;
+        }
+        .review-count{
+            color: #9b9b9b;
+            font-size: 11px;
+        }
+        .address{
+            color: #9b9b9b;
+            font-size: 11px;
+            max-width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+    }
+}
+.rate{
+    font-size: 13px;
+    color: #666;
+}
+.box-youtube{
+    width: 100%;
+    padding: .5rem!important;
+    input{
+        width: 100%;
+        font-weight: 500;
+        color: #1a1a1a;
+        font-size: 13px;
+        border: none;
+    }
+}
+.btn-review {
+    margin-top: 5px;
+    border: 1px solid #0caa41;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 122px;
+    background: #0caa41;
+}
+#editor{
+    height: 300px;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+}
+.text-option{
+    display: none;
+}
+@media(max-width: 768px){
+    .rate-box{
+        justify-content: space-between;
+        white-space: nowrap;
+        .col-5{
+            display: none;
+        }
+    }
+}
+@media(max-width: 500px)  {
+    .service-info .service-item b{
+        display: none;
+    }
+}

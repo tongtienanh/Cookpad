@@ -1,0 +1,50 @@
+.main-content {
+    h1 {
+        margin: 20px 0 10px;
+        font-size: 34px;
+        color: $color-4a4a4a;
+    }
+
+    h2 {
+        margin: 30px 0 15px;
+        font-size: 20px;
+        color: $color-4a4a4a;
+    }
+    color: $color-4a4a4a;
+
+
+    .legal {
+        p {
+            font-size: 16px;
+            color: $color-4a4a4a;
+        }
+
+        ul {
+            li {
+                margin-bottom: 10px;
+                a {
+                    font-size: 16px;
+                    text-decoration: underline;
+                    color: $color-4a4a4a;
+                }
+            }
+        }
+    }
+    .cookie-usages{
+        border: 1px solid #cececd;
+        td{
+            width: 8%;
+            border: 1px solid #cececd;
+            padding: 5px 10px;
+            &:nth-child(1){
+                width: 8%;
+            }
+            &:nth-child(2){
+                width: 12%;
+            }
+            &:nth-child(3){
+                width: 35%;
+            }
+        }
+    }
+}

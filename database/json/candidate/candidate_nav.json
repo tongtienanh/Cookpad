@@ -1,0 +1,67 @@
+{
+    "account_candidate": [
+        {
+            "title" : "static.box_account_dropdown.txt_profile",
+            "menus" : [
+                {
+                    "title": "static.box_account_dropdown.profile",
+                    "route": "get.profile.index"
+                },
+                {
+                    "title": "static.box_account_dropdown.cv_manage",
+                    "route": "get.cv.create"
+                },
+                {
+                    "title": "static.box_account_dropdown.cover_letter_manage",
+                    "route": "get.cover_letter.create"
+                },
+                {
+                    "title": "static.box_account_dropdown.employer_seen_cv",
+                    "route": "get.employer.seen_cv"
+                }
+            ]
+        },
+        {
+            "title" : "static.box_account_dropdown.txt_job",
+            "menus" : [
+                {
+                    "title": "static.box_account_dropdown.setting_job",
+                    "route": "user.job.setting"
+                },
+                {
+                    "title": "static.box_account_dropdown.job_match",
+                    "route": "user.job.match"
+                },
+                {
+                    "title": "static.box_account_dropdown.job_apply",
+                    "route": "user.job.apply"
+                },
+                {
+                    "title": "static.box_account_dropdown.job_save",
+                    "route": "user.job.save"
+                },
+                {
+                    "title": "static.box_account_dropdown.job_seen",
+                    "route": "user.job.view"
+                }
+            ]
+        },
+        {
+            "title" : "static.box_account_dropdown.txt_setting",
+            "menus" : [
+                {
+                    "title": "static.box_account_dropdown.setting_account",
+                    "route": "get.acc_setting.setting"
+                },
+                {
+                    "title": "static.box_account_dropdown.update_password",
+                    "link": "get.acc_setting.change_password"
+                },
+                {
+                    "title": "static.box_account_dropdown.logout",
+                    "link": "account/logout"
+                }
+            ]
+        }
+    ]
+}

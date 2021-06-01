@@ -1,0 +1,35 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+
+        Options -MultiViews -Indexes
+
+    </IfModule>
+
+    RewriteEngine On
+#Redirect 301 /profile/news_post /detail
+
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+    # Handle Authorization Header
+#    RewriteCond %{HTTP:Authorization} .
+#    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+<filesMatch "\.(ico|pdf|flv|jpeg|png|gif|js|css|swf|svg|webp|woff|woff2|ttf|jpg|maps)$">
+    Header set Cache-Control "max-age=63072000"
+</filesMatch>
+<filesMatch ".(css|js)$">
+ Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+<filesMatch ".(jpg|svg)$">
+Header set Cache-Control "max-age=8380800, public"
+</filesMatch>
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

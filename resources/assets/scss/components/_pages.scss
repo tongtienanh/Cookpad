@@ -1,0 +1,17 @@
+.pagination {
+    margin: 30px 0;
+
+    a {
+        padding: 5px;
+
+        i {
+            color: $color-4a4a4a;
+            font-weight: 400;
+        }
+    }
+
+    span {
+        padding: 5px;
+        font-size: 19px;
+    }
+}

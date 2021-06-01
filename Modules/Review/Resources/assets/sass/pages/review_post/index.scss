@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+@import "../../../../../../../resources/assets/scss/bootstrap/bootstrap";
+@import '../../../../../../../resources/asset_bases/scss/base/form';
+@import '../../../../../../../resources/asset_bases/scss/base/card';
+
+// Plugin
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_custom_login";
+@import "../../../../../../../resources/assets/scss/components/modal/modal_where_booking";
+
+@import "../../../../../../../resources/assets/scss/components/footer/footer";
+@import "../../../../../../../resources/assets/scss/components/course/owl_course";
+@import "../../../../../../../resources/assets/scss/components/footer/footer_cockpad";
+@import "../../../../../../../resources/assets/scss/components/container_table";
+@import "../../../../../../../resources/assets/scss/components/breadcrumb";
+@import "components/content";
+body{
+    font-family: Helvetica;
+}
+.container{
+    width: 100%;
+    width: 1024px;
+    padding: 0;
+    //margin: 0 auto;
+}
+
+.thumbnail-wrapper{
+    padding-top: 100%;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    align-items: center!important;
+    justify-content: center!important;
+    img{
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+body{
+    background: #F9F9F9;
+}
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media(max-width: 768px)  {
+    .container{
+        width: 100%;
+    }
+    .breadcrumb{
+        display: none;
+    }
+}
